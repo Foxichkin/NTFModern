@@ -245,8 +245,6 @@
 		return FALSE
 	if(!check_distance(target, silent))
 		return FALSE
-	if(!isxeno(target))
-		return FALSE
 	var/mob/living/carbon/xenomorph/patient = target
 	if(!CHECK_BITFIELD(use_state_flags|override_flags, XACT_IGNORE_DEAD_TARGET) && patient.stat == DEAD)
 		if(!silent)
@@ -398,7 +396,7 @@
 
 
 /**
- * Checks for any non-anchored movable atom, throwing them towards the shrike/owner using the ability. 
+ * Checks for any non-anchored movable atom, throwing them towards the shrike/owner using the ability.
  * While causing shake to anything in range with effects applied to humans affected.
  */
 /datum/action/xeno_action/activable/psychic_vortex/proc/vortex_pull()
