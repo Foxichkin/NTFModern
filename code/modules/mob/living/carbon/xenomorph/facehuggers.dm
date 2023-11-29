@@ -251,14 +251,14 @@
 			return
 
 	if(ishuman(loc)) //Having an angry xeno in your hand is a bad idea.
-		var/mob/living/carbon/human/holder = loc
+		var/mob/living/holder = loc
 		holder.visible_message(span_warning("The facehugger [holder] is carrying leaps at [holder.p_them()]!") , "<span class ='danger'>The facehugger you're carrying leaps at you!</span>")
 		if(!Attach(holder))
 			go_idle()
 		return
 
 	var/i = 10//So if we have a pile of dead bodies around, it doesn't scan everything, just ten iterations.
-	for(var/mob/living/carbon/M in view(4,src))
+	for(var/mob/living/M in view(4,src))
 		if(!i)
 			break
 		if(M.can_be_facehugged(src))
@@ -375,17 +375,17 @@
 		go_idle()
 		return
 
-	var/mob/living/carbon/carbon_victim = hit_atom
-	if(loc == carbon_victim) //Caught
+	var/mob/living/victim = hit_atom
+	if(loc == victim) //Caught
 		pre_leap(impact_time)
-	else if(leaping && carbon_victim.can_be_facehugged(src)) //Standard leaping behaviour, not attributable to being _thrown_ such as by a Carrier.
-		if(!Attach(carbon_victim))
+	else if(leaping && victim.can_be_facehugged(src)) //Standard leaping behaviour, not attributable to being _thrown_ such as by a Carrier.
+		if(!Attach(victim))
 			go_idle()
 	else
 		step(src, REVERSE_DIR(dir))
-		if(!issamexenohive(carbon_victim))
-			carbon_victim.adjust_stagger(3 SECONDS)
-			carbon_victim.add_slowdown(3)
+		if(!issamexenohive(victim))
+			victim.adjust_stagger(3 SECONDS)
+			victim.add_slowdown(3)
 		pre_leap(activate_time)
 
 	leaping = FALSE
@@ -435,7 +435,7 @@
 		return FALSE
 
 	if(!provoked)
-		if(species?.species_flags & (IS_SYNTHETIC|ROBOTIC_LIMBS))
+		if(isrobot(src))
 			return FALSE
 
 	if(on_fire)
@@ -545,14 +545,14 @@
 		var/hugsound = user.gender == FEMALE ? get_sfx("female_hugged") : get_sfx("male_hugged")
 		playsound(loc, hugsound, 25, 0)
 	if(!sterile && !issynth(user))
-		var/stamina_dmg = user.maxHealth + user.max_stamina
+		var/stamina_dmg = 150 //user.maxHealth + user.max_stamina
 		user.apply_damage(stamina_dmg, STAMINA) // complete winds the target
 		user.Unconscious(20 SECONDS)
 	attached = TRUE
 	go_idle(FALSE, TRUE)
 	addtimer(CALLBACK(src, PROC_REF(Impregnate), user), IMPREGNATION_TIME)
 
-/obj/item/clothing/mask/facehugger/proc/Impregnate(mob/living/carbon/target)
+/obj/item/clothing/mask/facehugger/proc/Impregnate(mob/living/target)
 	ADD_TRAIT(src, TRAIT_NODROP, HUGGER_TRAIT)
 	var/as_planned = target?.wear_mask == src ? TRUE : FALSE
 	if(target.can_be_facehugged(src, FALSE, FALSE) && !sterile && as_planned) //is hugger still on face and can they still be impregnated
@@ -603,7 +603,7 @@
 	REMOVE_TRAIT(src, TRAIT_NODROP, HUGGER_TRAIT)
 	attached = FALSE
 	if(isliving(loc) && forcedrop) //Make it fall off the person so we can update their icons. Won't update if they're in containers thou
-		var/mob/living/M = loc
+		var/mob/living/carbon/human/M = loc
 		M.dropItemToGround(src)
 	update_icon()
 
@@ -692,7 +692,7 @@
 	if(!combat_hugger_check_target(M))
 		return FALSE
 
-	var/mob/living/victim = M
+	var/mob/living/carbon/human/victim = M
 	do_attack_animation(M)
 	victim.apply_damage(100, STAMINA, BODY_ZONE_HEAD, BIO) //This should prevent sprinting
 	victim.apply_damage(1, BRUTE, sharp = TRUE, updating_health = TRUE) //Token brute for the injection
@@ -753,7 +753,7 @@
 		if(!locate(/obj/effect/xenomorph/spray) in sticky_tile.contents)
 			new /obj/alien/resin/sticky/thin(sticky_tile)
 
-	for(var/mob/living/target in range(1, loc))
+	for(var/mob/living/carbon/human/target in range(1, loc))
 		if(isxeno(target)) //Xenos aren't affected by sticky resin
 			continue
 
@@ -779,7 +779,7 @@
 	if(!combat_hugger_check_target(M))
 		return FALSE
 
-	var/mob/living/victim = M
+	var/mob/living/carbon/human/victim = M
 	do_attack_animation(M, ATTACK_EFFECT_REDSLASH)
 	playsound(loc, "alien_claw_flesh", 25, 1)
 	var/affecting = ran_zone(null, 0)

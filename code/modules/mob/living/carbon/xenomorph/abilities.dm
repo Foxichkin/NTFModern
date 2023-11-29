@@ -193,6 +193,7 @@
 		/turf/closed/wall/resin/regenerating,
 		/obj/alien/resin/sticky,
 		/obj/structure/mineral_door/resin,
+		/obj/structure/bed/nest,
 		)
 	/// Used for the dragging functionality of pre-shuttter building
 	var/dragging = FALSE
@@ -1157,10 +1158,10 @@
 /datum/action/xeno_action/activable/larval_growth_sting
 	name = "Larval Growth Sting"
 	action_icon_state = "drone_sting"
-	desc = "Inject an impregnated host with growth serum, causing the larva inside to grow quicker."
+	desc = "Inject an impregnated host with growth serum, causing the larva inside to grow quicker. Has harmful effects for non-hested hosts while stabilizing nested hosts."
 	ability_name = "larval growth sting"
 	plasma_cost = 150
-	cooldown_timer = 12 SECONDS
+	cooldown_timer = 30 SECONDS
 	keybinding_signals = COMSIG_XENOABILITY_LARVAL_GROWTH_STING
 	target_flags = XABB_MOB_TARGET
 
@@ -1169,7 +1170,7 @@
 	to_chat(owner, "<span class='xenodanger'>We feel our growth toxin glands refill. We can use Growth Sting again.</span>")
 	return ..()
 
-/datum/action/xeno_action/activable/larval_growth_sting/can_use_ability(atom/A, silent = FALSE, override_flags)
+/datum/action/xeno_action/activable/larval_growth_sting/can_use_ability(mob/living/carbon/A, silent = FALSE, override_flags)
 	. = ..()
 	if(!.)
 		return FALSE
@@ -1189,13 +1190,16 @@
 			X.recent_notice = world.time //anti-notice spam
 		return FALSE
 
-/datum/action/xeno_action/activable/larval_growth_sting/use_ability(atom/A)
+/datum/action/xeno_action/activable/larval_growth_sting/use_ability(mob/living/carbon/A)
 	var/mob/living/carbon/xenomorph/X = owner
 
 	succeed_activate()
 
 	add_cooldown()
-	X.recurring_injection(A, /datum/reagent/consumable/larvajelly, XENO_LARVAL_CHANNEL_TIME, XENO_LARVAL_AMOUNT_RECURRING)
+	if(isnestedhost(A))
+		X.recurring_injection(A, list(/datum/reagent/consumable/larvajelly,/datum/reagent/medicine/tricordrazine,/datum/reagent/medicine/inaprovaline), XENO_LARVAL_CHANNEL_TIME, XENO_LARVAL_AMOUNT_RECURRING)
+	else
+		X.recurring_injection(A, list(/datum/reagent/toxin/sleeptoxin, /datum/reagent/toxin/acid, /datum/reagent/consumable/larvajelly), XENO_LARVAL_CHANNEL_TIME, XENO_LARVAL_AMOUNT_RECURRING, 5)
 
 
 // ***************************************
@@ -1426,6 +1430,7 @@
 	use_state_flags = XACT_USE_STAGGERED
 	plasma_cost = 50
 	gamemode_flags = ABILITY_NUCLEARWAR
+	target_flags = XABB_HUMAN_TARGET
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_IMPREGNATE,
 	)
@@ -1435,9 +1440,12 @@
 	if(!.)
 		return FALSE
 	var/mob/living/carbon/xenomorph/X = owner
-	var/mob/living/carbon/human/victim = A
-	if(!ishuman(A) || issynth(A))
-		to_chat(owner, span_warning("That wouldn't be able to bear a larva."))
+	var/mob/living/victim = A
+	if(locate(/obj/item/alien_embryo) in victim)
+		to_chat(owner, span_warning("There is already a young one in this host."))
+		return FALSE
+	if(!ishuman(A))
+		to_chat(owner, span_warning("This one wouldn't be able to bear a young one."))
 		return FALSE
 	if(owner.do_actions) //can't use if busy
 		return FALSE
@@ -1447,16 +1455,18 @@
 		if(!silent)
 			to_chat(X, span_warning("We're too busy being on fire to do this!"))
 		return FALSE
-	X.face_atom(victim)
 	X.visible_message(span_danger("[X] starts to fuck [victim]!"), \
 	span_danger("We start to fuck [victim]!"), null, 5)
-	succeed_activate()
 
-/datum/action/xeno_action/activable/impregnate/use_ability(atom/A)
+/datum/action/xeno_action/activable/impregnate/use_ability(mob/living/A)
 	var/channel = SSsounds.random_available_channel()
 	var/mob/living/carbon/xenomorph/X = owner
 	var/mob/living/carbon/human/victim = A
 	var/hivenumber = XENO_HIVE_NORMAL
+	X.face_atom(victim)
+	X.do_jitter_animation()
+	A.do_jitter_animation()
+	to_chat(owner, span_warning("We will cum in 6 seconds! Do not walk away until it is done."))
 	playsound(X, 'sound/effects/alien_plapping.ogg', 40, channel = channel)
 	if(!do_after(X, 7 SECONDS, FALSE, victim, BUSY_ICON_DANGER, extra_checks = CALLBACK(owner, TYPE_PROC_REF(/mob, break_do_after_checks), list("health" = X.health))))
 		to_chat(owner, span_warning("We stop fucking \the [victim]. They probably was loose anyways."))
@@ -1464,20 +1474,19 @@
 		return fail_activate()
 	owner.visible_message(span_warning("[X] fucks [victim]!"), \
 	span_warning("We fuck [victim]!"), null, 5)
-	to_chat(owner, span_warning("We will cum in 6 seconds! Do not walk away until it is done."))
-	X.do_jitter_animation()
 	if(!do_after(X, 6, FALSE, null, BUSY_ICON_DANGER))
 		to_chat(owner, span_warning("We moved too soon and we will have to fuck our victim again!"))
 		return fail_activate()
-	if(!(locate(/obj/item/alien_embryo) in target))
-		victim.apply_damage(25, BURN, GROIN)
-		var/obj/item/alien_embryo/embryo = new(target)
+	if(!(locate(/obj/item/alien_embryo) in victim))
+		victim.apply_damage(25, BURN, BODY_ZONE_PRECISE_GROIN)
+		var/obj/item/alien_embryo/embryo = new(victim)
 		embryo.hivenumber = hivenumber
 		GLOB.round_statistics.now_pregnant++
 		SSblackbox.record_feedback("tally", "round_statistics", 1, "now_pregnant")
 		var/datum/personal_statistics/personal_statistics = GLOB.personal_statistics_list[X.ckey]
 		personal_statistics.impregnations++
 	add_cooldown()
+	succeed_activate()
 
 /////////////////////////////////
 // Cocoon
