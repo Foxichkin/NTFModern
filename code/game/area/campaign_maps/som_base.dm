@@ -340,3 +340,151 @@
 	outside = FALSE
 	ceiling = CEILING_DEEP_UNDERGROUND_METAL
 	minimap_color = MINIMAP_AREA_REQ_CAVE
+
+/// canora_desert new base
+
+/area/canora_desert/surface/building/command
+	name = "Command Dome"
+	icon_state = "bridge"
+	minimap_color = MINIMAP_AREA_COMMAND
+	ceiling = underground
+
+/area/canora_desert/surface/outside/desert	
+	name = "canora_desert"
+	ceiling = CEILING_NONE
+
+/area/canora_desert/surface/building/closed
+	name = "off borders"
+	ceiling = CEILING_DEEP_UNDERGROUND_METAL
+
+/area/canora_desert/surface/building/abandoned_wooden_building
+	name = "abandoned wooden building"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/abandoned_wooden_building2
+	name = "abandoned wooden building"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/street_food_canora
+	name = "street food"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/crashed
+	name = "utterly destroyed building"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/police_station
+	name = "Police Station"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_SEC
+
+/area/canora_desert/surface/building/som_engineering
+	name = "SOM Engineering"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_ENGI
+
+/area/canora_desert/surface/building/som_medical
+	name = "SOM Sanitary"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_MEDBAY
+	
+/area/canora_desert/surface/building/som_janitor
+	name = "Janitorial Custody"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_RESEARCH
+
+/area/canora_desert/surface/building/som_barracks
+	name = "SOM barracks"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_LIVING
+
+/area/canora_desert/surface/building/som_restrooms
+	name = "Restrooms"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_LIVING
+
+/area/canora_desert/surface/building/som_smaint
+	name = "South Maintenance"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_engimedmaint
+	name = "Engi-Med Maintenance"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_mechbay_maint
+	name = "Robotics Maintenance"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_torturechamber
+	name = "Torture Chamber"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_SEC
+
+/area/canora_desert/surface/building/som_security_hallway
+	name = "Security Hallway"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_SEC
+
+/area/canora_desert/surface/building/som_armory
+	name = "Secure Armory"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_SEC
+
+/area/canora_desert/surface/building/som_prison
+	name = "Prisoner Contaiment"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_SEC
+
+/area/canora_desert/surface/building/som_kitchen
+	name = "Food Court"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_robotics
+	name = "Robotics Hallway"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_RESEARCH
+
+/area/canora_desert/surface/building/som_sservicing
+	name = "Robot Servicing"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_mechbay
+	name = "Mech Bay"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_admiral
+	name = "Admiral Quarters"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_COMMAND
+
+/area/canora_desert/surface/building/som_surgery1
+	name = "Surgery Operation Room 1"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_MEDBAY
+ 
+/area/canora_desert/surface/building/som_surgery2
+	name = "Surgery Operation Room 2"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_MEDBAY
+ 
+/area/canora_desert/surface/building/som_chemistry
+	name = "Chemistry"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_MEDBAY
+
+/area/canora_desert/surface/building/som_morgue
+	name = "Morgue"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_MEDBAY
+
+/area/canora_desert/surface/building/som_nmaint
+	name = "North Maintenance"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_floortwomain
+	name = "Main Tower Area"
+	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_engidome
+	name = "SMES Dome"
+	ceiling = CEILING_METAL
