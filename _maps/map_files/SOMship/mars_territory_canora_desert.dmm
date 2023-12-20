@@ -72,7 +72,7 @@
 	},
 /obj/structure/dropship_equipment/shuttle/operatingtable,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "as" = (
 /turf/open/space/transit{
 	name = "Sky"
@@ -182,7 +182,7 @@
 "aK" = (
 /obj/machinery/hydroponics,
 /turf/open/floor/grass,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "aL" = (
 /obj/machinery/chem_dispenser,
 /turf/open/floor/tile/green/whitegreenfull,
@@ -219,7 +219,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 9
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "aS" = (
 /obj/machinery/door/airlock/multi_tile/secure2{
 	dir = 2;
@@ -245,7 +245,7 @@
 /turf/open/floor/tile/black{
 	dir = 8
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "aZ" = (
 /obj/item/ammo_casing/cartridge,
 /obj/item/ammo_casing/bullet,
@@ -295,7 +295,7 @@
 /area/canora_desert/surface/building/som_engineering)
 "bm" = (
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "bn" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 1
@@ -330,7 +330,7 @@
 "bt" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "bu" = (
 /obj/machinery/door/poddoor/shutters/mainship/open/medical{
 	dir = 2;
@@ -362,7 +362,7 @@
 "by" = (
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/grass,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "bz" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 1
@@ -497,7 +497,7 @@
 "ca" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/prison/darkyellow,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "cb" = (
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 6
@@ -508,7 +508,7 @@
 	name = "whip"
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "cc" = (
 /obj/machinery/door/airlock/multi_tile/mainship/blackgeneric{
 	name = "Syndicate Supply Bay"
@@ -551,7 +551,7 @@
 	dir = 8
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "ck" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
@@ -587,7 +587,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2,
 /turf/open/floor/prison/bright_clean,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "cq" = (
 /obj/structure/mecha_wreckage/reticence,
 /turf/open/floor/grayscale/edge/black,
@@ -608,13 +608,13 @@
 	dir = 6
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "cv" = (
 /obj/machinery/atmospherics/pipe/manifold/general/hidden/layer2{
 	dir = 4
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "cw" = (
 /obj/structure/bed/chair/sofa/left{
 	dir = 8
@@ -737,7 +737,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "de" = (
 /obj/item/ammo_casing/bullet,
 /turf/open/floor/plating/ground/dirt,
@@ -876,7 +876,7 @@
 	dir = 8
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "dL" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/icefloor/warnplate,
@@ -997,7 +997,7 @@
 	dir = 5
 	},
 /turf/open/floor/prison/darkyellow/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "eo" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
@@ -1031,14 +1031,14 @@
 /obj/item/reagent_containers/pill/russian_red,
 /obj/machinery/light/small,
 /turf/open/floor/prison/darkyellow,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "ex" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/mainship/security/free_access,
 /turf/open/floor/tile/black{
 	dir = 4
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "ey" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -1137,7 +1137,7 @@
 "eT" = (
 /obj/machinery/vending/hydronutrients,
 /turf/open/floor/grass,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "eX" = (
 /obj/structure/razorwire,
 /turf/open/floor/plating/ground/dirt,
@@ -1171,7 +1171,7 @@
 "fb" = (
 /obj/machinery/atmospherics/pipe/manifold/general/hidden/layer2,
 /turf/open/floor/prison/darkyellow/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "fc" = (
 /obj/structure/cable,
 /obj/structure/cable,
@@ -1533,7 +1533,7 @@
 	},
 /obj/structure/closet/secure_closet/injection,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "gZ" = (
 /obj/structure/cable,
 /turf/open/floor/mainship/silver{
@@ -1836,6 +1836,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mainship/orange,
 /area/canora_desert/surface/building/som_engineering)
+"ik" = (
+/turf/closed/wall/mainship/gray,
+/area/canora_desert/surface/building/som_prison)
 "in" = (
 /obj/structure/prop/tgbrokenvendor/colablack,
 /turf/open/floor/grayscale/edge/black{
@@ -1899,7 +1902,7 @@
 	dir = 4
 	},
 /turf/open/floor/prison/bright_clean,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "iB" = (
 /obj/structure/bed/fancy,
 /obj/structure/curtain/medical,
@@ -1911,7 +1914,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 1
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "iD" = (
 /obj/structure/flora/desert/grass/heavy{
 	pixel_y = -18
@@ -2019,7 +2022,7 @@
 	dir = 8
 	},
 /turf/open/floor/prison/darkyellow/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "jd" = (
 /obj/structure/razorwire{
 	dir = 1
@@ -2320,7 +2323,7 @@
 /area/space)
 "kk" = (
 /turf/open/floor/tile/black,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "km" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -2384,7 +2387,7 @@
 "ku" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "kv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
@@ -2425,7 +2428,7 @@
 	dir = 1
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "kC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/platform_decoration{
@@ -2495,7 +2498,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "kQ" = (
 /obj/structure/cable,
 /turf/open/floor/glass/reinforced,
@@ -2542,7 +2545,7 @@
 	name = "Torture Chamber"
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "lb" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 8
@@ -2662,7 +2665,7 @@
 	dir = 8
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "lD" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 4
@@ -2861,7 +2864,7 @@
 "my" = (
 /obj/machinery/vending/sovietsoda,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "mz" = (
 /obj/effect/turf_decal/warning_stripes/thin{
 	icon_state = "E"
@@ -2889,7 +2892,7 @@
 /turf/open/floor/tile/black{
 	dir = 4
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "mD" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 10
@@ -2917,7 +2920,7 @@
 /turf/open/floor/tile/black{
 	dir = 10
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "mK" = (
 /obj/structure/bed/bunkbed,
 /turf/open/floor/mainship/orange{
@@ -2986,7 +2989,7 @@
 	dir = 4
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "nb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/fancy,
@@ -3050,7 +3053,7 @@
 "nn" = (
 /obj/item/stool,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "no" = (
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
@@ -3067,7 +3070,7 @@
 	dir = 4
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "nq" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/icefloor/warnplate{
@@ -3145,7 +3148,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 5
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "nH" = (
 /obj/effect/turf_decal/warning_stripes/thin{
 	icon_state = "N"
@@ -3410,7 +3413,7 @@
 	},
 /obj/machinery/power/apc/mainship/hardened,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "oJ" = (
 /obj/structure/prop/mainship/railing{
 	dir = 10
@@ -3565,7 +3568,7 @@
 	},
 /obj/effect/landmark/start/job/som/squadveteran,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "pn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -3640,7 +3643,7 @@
 "pz" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "pA" = (
 /obj/structure/flora/desert/grass/heavy,
 /obj/effect/turf_decal/lvsanddecal{
@@ -3805,7 +3808,7 @@
 	dir = 1
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "qu" = (
 /turf/open/floor/plating/catwalk,
 /area/space)
@@ -3872,7 +3875,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "qJ" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2,
 /obj/machinery/light/small{
@@ -4348,7 +4351,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "sA" = (
 /obj/machinery/door/poddoor/shutters/mainship/open/medical{
 	dir = 2;
@@ -4454,7 +4457,7 @@
 	dir = 1
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "sX" = (
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/general/som)
@@ -4645,7 +4648,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 1
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "tN" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 8
@@ -4788,7 +4791,7 @@
 	dir = 4
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "ux" = (
 /obj/structure/stairs/seamless/platform_vert{
 	dir = 4
@@ -4996,6 +4999,9 @@
 	dir = 10
 	},
 /area/canora_desert/surface/building/som_medical)
+"vt" = (
+/turf/closed/wall/mainship/gray,
+/area/canora_desert/surface/building/som_torturechamber)
 "vu" = (
 /obj/effect/turf_decal/warning_stripes/mech,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
@@ -5091,7 +5097,7 @@
 "vL" = (
 /obj/structure/cable,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "vM" = (
 /turf/closed/wall/wood{
 	wall_integrity = 513
@@ -5249,7 +5255,7 @@
 	dir = 10
 	},
 /turf/open/floor/prison/darkyellow/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "wv" = (
 /obj/structure/razorwire{
 	dir = 1
@@ -5299,7 +5305,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "wE" = (
 /obj/structure/closet/wardrobe/chemistry_white,
 /turf/open/floor/tile/green/whitegreenfull,
@@ -5469,7 +5475,7 @@
 	dir = 1
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "xo" = (
 /obj/structure/rock/basalt/alt2,
 /obj/item/ore/gold,
@@ -5617,7 +5623,7 @@
 	dir = 6
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "xQ" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/mainship/hardened,
@@ -6248,7 +6254,7 @@
 "AF" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/on,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "AJ" = (
 /obj/effect/turf_decal/lvsanddecal,
 /obj/item/tool/pickaxe/drill,
@@ -6503,7 +6509,7 @@
 /obj/effect/turf_decal/trimline/dark_red/warning,
 /obj/effect/decal/remains/human,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "BO" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 5
@@ -6591,7 +6597,7 @@
 /area/canora_desert/surface/building/som_medical)
 "Ce" = (
 /turf/closed/wall/r_wall,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Cg" = (
 /obj/item/paper{
 	icon_state = "map";
@@ -6613,7 +6619,7 @@
 	dir = 6
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Cj" = (
 /obj/item/weapon/gun/energy/lasgun/lasrifle/volkite/cope/predeployed,
 /obj/structure/barricade/concrete,
@@ -6914,7 +6920,7 @@
 	dir = 9
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Dw" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2,
 /obj/structure/window/reinforced/east,
@@ -6991,7 +6997,7 @@
 "Ef" = (
 /obj/machinery/camera/autoname/mainship/somship,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Eg" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 5
@@ -7038,7 +7044,7 @@
 	dir = 1
 	},
 /turf/open/floor/prison/bright_clean,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Ep" = (
 /obj/structure/cable,
 /obj/machinery/light/small,
@@ -7052,7 +7058,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Et" = (
 /obj/effect/turf_decal/trimline/brown/filled/arrow_cw{
 	dir = 8
@@ -7072,7 +7078,7 @@
 	dir = 1
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "Ex" = (
 /turf/closed/wall/desertcavewall,
 /area/canora_desert/surface/building/closed)
@@ -7104,7 +7110,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "EJ" = (
 /obj/structure/window/framed/mainship/toughened{
 	name = "kevlar-weave infused bulletproof window"
@@ -7231,7 +7237,7 @@
 /turf/open/floor/tile/black{
 	dir = 1
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "FD" = (
 /turf/open/floor/plating/ground/dirt_desert,
 /area/canora_desert/surface/building/closed)
@@ -7261,7 +7267,7 @@
 	dir = 8
 	},
 /turf/open/floor/prison/darkyellow/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "FI" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 10
@@ -7293,7 +7299,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 8
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "FS" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 9
@@ -7330,7 +7336,7 @@
 	},
 /obj/machinery/light/small,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Gi" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 4
@@ -7338,7 +7344,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 4
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Gj" = (
 /obj/structure/table/black,
 /turf/open/floor/dark2,
@@ -7446,7 +7452,7 @@
 /obj/item/bedsheet/hos,
 /obj/structure/bed,
 /turf/open/floor/prison/darkyellow,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "GX" = (
 /obj/effect/turf_decal/warning_stripes/box,
 /turf/open/floor/grayscale/round/black,
@@ -7474,7 +7480,7 @@
 "Hg" = (
 /obj/effect/turf_decal/trimline/dark_red/warning,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "Hj" = (
 /turf/open/floor/plating/ground/desertdam/cave/inner_cave_floor,
 /area/canora_desert/surface/outside/desert{
@@ -7496,7 +7502,7 @@
 /obj/item/tool/wirecutters,
 /obj/item/tool/weldingtool,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "Hm" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 9
@@ -7518,6 +7524,13 @@
 	dir = 1
 	},
 /area/canora_desert/surface/building/som_mechbay)
+"Hr" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/mainship/black/full,
+/area/canora_desert/surface/building/som_torturechamber)
 "Hw" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/grayscale/edge/black{
@@ -7619,14 +7632,14 @@
 	dir = 8
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "Ih" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos,
 /turf/open/floor/prison/darkyellow{
 	dir = 10
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Ii" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 10
@@ -7666,7 +7679,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 1
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Ir" = (
 /obj/effect/turf_decal/trimline/dark_red/filled/warning{
 	dir = 4
@@ -7793,7 +7806,7 @@
 	pixel_x = -1
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "IU" = (
 /obj/structure/cable,
 /obj/machinery/power/terminal{
@@ -7943,7 +7956,7 @@
 	dir = 4
 	},
 /turf/open/floor/prison/darkred/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Kb" = (
 /obj/structure/cable,
 /turf/open/space/basic,
@@ -7978,7 +7991,7 @@
 	dir = 8
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Kl" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /turf/open/floor/plating/ironsand,
@@ -8005,7 +8018,7 @@
 	dir = 8
 	},
 /turf/open/floor/prison/darkred/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Kw" = (
 /obj/machinery/vending/robotics,
 /turf/open/floor/grayscale/edge/black{
@@ -8111,7 +8124,7 @@
 "KZ" = (
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "La" = (
 /obj/effect/turf_decal/tile/transparent/dark_red/full,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
@@ -8138,6 +8151,9 @@
 	},
 /turf/open/floor/grayscale/round/black,
 /area/space)
+"Li" = (
+/turf/open/floor/mainship/black/full,
+/area/canora_desert/surface/building/som_torturechamber)
 "Lj" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 5
@@ -8196,7 +8212,7 @@
 "Lx" = (
 /obj/structure/cable,
 /turf/closed/wall/r_wall,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Lz" = (
 /turf/closed/wall/mainship/gray,
 /area/canora_desert/surface/building/som_surgery2)
@@ -8272,11 +8288,11 @@
 "Ma" = (
 /obj/machinery/light/small,
 /turf/open/floor/tile/black,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Mc" = (
 /obj/structure/cable,
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Me" = (
 /turf/open/floor/plating/catwalk,
 /area/canora_desert/surface/outside/desert{
@@ -8313,7 +8329,7 @@
 "Mp" = (
 /obj/machinery/vending/som/lasgun,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Mq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/iron/grimy,
@@ -8335,7 +8351,7 @@
 	dir = 10
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Mv" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -8357,7 +8373,7 @@
 "MF" = (
 /obj/effect/spawner/random/misc/structure/emcloset,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "MI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -8373,7 +8389,7 @@
 	dir = 10
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "MN" = (
 /obj/effect/spawner/random/misc/structure/office_chair_or_metal/west,
 /turf/open/floor/plating/ironsand,
@@ -8403,7 +8419,7 @@
 	dir = 10
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "MT" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 6
@@ -8435,7 +8451,7 @@
 	dir = 4
 	},
 /turf/open/floor/prison/darkyellow/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Ne" = (
 /obj/effect/turf_decal/warning_stripes/thin{
 	icon_state = "W"
@@ -8450,7 +8466,7 @@
 /turf/open/floor/tile/black{
 	dir = 8
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Ng" = (
 /turf/open/floor/plating/ground/desertdam/asphalt/twoside{
 	dir = 8
@@ -8516,7 +8532,7 @@
 	dir = 9
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "NH" = (
 /obj/effect/decal/cleanable/blood/gibs/robot/limb,
 /turf/open/floor/dark2,
@@ -8542,14 +8558,14 @@
 	dir = 10
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "NR" = (
 /obj/machinery/power/apc/mainship/hardened,
 /obj/structure/cable,
 /turf/open/floor/tile/black{
 	dir = 1
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "NS" = (
 /obj/effect/spawner/random/decal/blood,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
@@ -8559,7 +8575,7 @@
 /area/canora_desert/surface/building/som_medical)
 "NT" = (
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "NU" = (
 /obj/item/clothing/head/warning_cone,
 /turf/open/floor/plating/dmg1,
@@ -8782,7 +8798,7 @@
 	dir = 8
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "OM" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
@@ -8835,7 +8851,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "OT" = (
 /obj/machinery/atmospherics/pipe/manifold/general/hidden/layer2{
 	dir = 1
@@ -8926,7 +8942,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 4
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Pr" = (
 /obj/structure/table/reinforced,
 /obj/item/clipboard,
@@ -9132,7 +9148,7 @@
 	dir = 8
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Qg" = (
 /obj/structure/platform/metalplatform{
 	dir = 9
@@ -9267,11 +9283,11 @@
 "QK" = (
 /obj/structure/cable,
 /turf/open/floor/prison/darkred/full,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "QL" = (
 /obj/machinery/vending/marineFood/som,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "QN" = (
 /obj/structure/cable,
 /turf/closed/wall/mainship/outer/reinforced,
@@ -9281,7 +9297,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 6
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "QP" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/pod/old/syndicate,
@@ -9344,7 +9360,7 @@
 "Rc" = (
 /obj/machinery/flasher/portable,
 /turf/open/floor/tile/black,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Rd" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 9
@@ -9360,7 +9376,7 @@
 	},
 /obj/effect/landmark/start/job/som/squadveteran,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Rf" = (
 /obj/structure/tankholder/emergencyoxygen,
 /turf/open/floor/mainship/mono,
@@ -9611,7 +9627,7 @@
 	dir = 1
 	},
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Si" = (
 /obj/effect/spawner/random/misc/structure/fire_closet,
 /turf/open/floor/dark2,
@@ -9639,7 +9655,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Sm" = (
 /obj/effect/turf_decal/lvsanddecal/corner{
 	dir = 8;
@@ -10405,7 +10421,7 @@
 /turf/open/floor/tile/black{
 	dir = 9
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Vx" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -10584,7 +10600,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "Wm" = (
 /obj/structure/table/reinforced,
 /obj/structure/filingcabinet/security,
@@ -10652,7 +10668,7 @@
 	dir = 1
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Wu" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/red/line{
@@ -10836,19 +10852,19 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/donkpockets,
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Xf" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/engine/atmosdark,
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Xh" = (
 /obj/machinery/flasher/portable,
 /turf/open/floor/tile/black{
 	dir = 1
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Xj" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/manifold/general/hidden/layer2{
@@ -10930,6 +10946,9 @@
 "Xu" = (
 /turf/closed/wall/mainship/gray,
 /area/canora_desert/surface/building/command)
+"Xy" = (
+/turf/closed/wall/mainship/gray,
+/area/canora_desert/surface/building/som_security_hallway)
 "Xz" = (
 /obj/machinery/light{
 	dir = 4
@@ -11073,7 +11092,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/mainship/black/full,
-/area/space)
+/area/canora_desert/surface/building/som_torturechamber)
 "XZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -11177,7 +11196,7 @@
 /turf/open/floor/prison/darkyellow{
 	dir = 8
 	},
-/area/space)
+/area/canora_desert/surface/building/som_prison)
 "Yx" = (
 /obj/structure/showcase/six,
 /obj/structure/window{
@@ -11428,7 +11447,7 @@
 "ZF" = (
 /obj/machinery/vending/security,
 /turf/open/floor/tile/white,
-/area/space)
+/area/canora_desert/surface/building/som_security_hallway)
 "ZG" = (
 /obj/effect/turf_decal/sandytile,
 /turf/open/floor/plating/warning{
@@ -52531,7 +52550,7 @@ GD
 GD
 Ri
 Lk
-Wz
+ik
 Ce
 Ce
 ex
@@ -52821,7 +52840,7 @@ GD
 GD
 Ri
 Lk
-Wz
+Xy
 Ef
 ct
 qI
@@ -53111,7 +53130,7 @@ GD
 GD
 Ri
 Lk
-Wz
+Xy
 NT
 Kj
 Mc
@@ -53401,10 +53420,10 @@ GD
 GD
 Ri
 Lk
-Wz
-Wz
+vt
+vt
 kZ
-Wz
+vt
 Fn
 BW
 Fn
@@ -53691,7 +53710,7 @@ GD
 GD
 Ri
 Lk
-Wz
+vt
 gX
 OL
 XY
@@ -53981,9 +54000,9 @@ GD
 GD
 Ri
 Lk
-Wz
+vt
 Ew
-Kj
+Hr
 BN
 Fn
 qN
@@ -54271,7 +54290,7 @@ GD
 GD
 Ri
 Lk
-Wz
+vt
 xl
 Ie
 NN
@@ -54561,9 +54580,9 @@ GD
 GD
 Ri
 Lk
-Wz
+vt
 ar
-NT
+Li
 Hg
 Fn
 qN
@@ -54851,7 +54870,7 @@ GD
 GD
 Ri
 Lk
-Wz
+vt
 Hl
 na
 cb
@@ -55141,10 +55160,10 @@ GD
 GD
 Ri
 Lk
-Wz
-Wz
-Wz
-Wz
+vt
+vt
+vt
+vt
 Fn
 WH
 Fn
