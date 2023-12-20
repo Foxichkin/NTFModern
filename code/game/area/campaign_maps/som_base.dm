@@ -488,3 +488,7 @@
 /area/canora_desert/surface/building/som_engidome
 	name = "SMES Dome"
 	ceiling = CEILING_METAL
+
+/area/canora_desert/surface/building/som_caves
+	name = "Canora Caves"
+	ceiling = CEILING_DEEP_UNDERGROUND

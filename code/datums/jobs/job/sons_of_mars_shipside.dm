@@ -12,6 +12,7 @@
 //General
 /datum/job/som/command/commander
 	title = SOM_COMMANDER
+	access = ACCESS_SOM_COMMAND, ACCESS_SOM_SECURITY
 	req_admin_notify = TRUE
 	paygrade = "SOM_O7"
 	comm_title = "CMDR"
@@ -83,6 +84,7 @@ Godspeed, commander! And remember, you are not above the law."})
 //Field Commander
 /datum/job/som/command/fieldcommander
 	title = SOM_FIELD_COMMANDER
+	access = ACCESS_SOM_COMMAND, ACCESS_SOM_ADMIRAL, ACCESS_SOM_SQUADLEADER
 	req_admin_notify = TRUE
 	paygrade = "SOM_O3"
 	comm_title = "FCDR"
