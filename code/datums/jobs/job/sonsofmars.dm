@@ -48,7 +48,7 @@ Make your way to the cafeteria for some post-cryosleep chow, and then get equipp
 //SOM Standard
 /datum/job/som/squad/standard
 	title = SOM_SQUAD_MARINE
-	access = ACCESS_SOM_DEFAULT, ALL_ANTAGONIST_ACCESS
+	access = list (ACCESS_SOM_DEFAULT, ALL_ANTAGONIST_ACCESS)
 	paygrade = "SOM_E1"
 	comm_title = "Mar"
 	minimap_icon = "private"
@@ -106,7 +106,7 @@ What you lack alone, you gain standing shoulder to shoulder with the men and wom
 
 /datum/job/som/squad/engineer
 	title = SOM_SQUAD_ENGINEER
-	access = ACCESS_SOM_ENGINEERING, ALL_ANTAGONIST_ACCESS
+	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_ENGINEERING,ALL_ANTAGONIST_ACCESS)
 	paygrade = "SOM_E3"
 	comm_title = "Eng"
 	total_positions = 12
@@ -163,7 +163,7 @@ Your squaddies will look to you when it comes to construction in the field of ba
 
 /datum/job/som/squad/medic
 	title = SOM_SQUAD_CORPSMAN
-	access = ACCESS_SOM_MEDICAL, ALL_ANTAGONIST_ACCESS
+	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_MEDICAL,ALL_ANTAGONIST_ACCESS)
 	paygrade = "SOM_E3"
 	comm_title = "Med"
 	total_positions = 16
@@ -220,7 +220,7 @@ You may not be a fully-fledged doctor, but you stand between life and death when
 
 /datum/job/som/squad/veteran
 	title = SOM_SQUAD_VETERAN
-	access = ACCESS_SOM_VETERAN, ALL_ANTAGONIST_ACCESS
+	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_VETERAN,ALL_ANTAGONIST_ACCESS)
 	paygrade = "SOM_S1"
 	comm_title = "Vet"
 	total_positions = 8
@@ -271,7 +271,7 @@ You may not be a fully-fledged doctor, but you stand between life and death when
 
 /datum/job/som/squad/leader
 	title = SOM_SQUAD_LEADER
-	access = ACCESS_SOM_SQUADLEADER, ALL_ANTAGONIST_ACCESS
+		access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_SQUADLEADER,ALL_ANTAGONIST_ACCESS)
 	req_admin_notify = TRUE
 	paygrade = "SOM_S3"
 	comm_title = JOB_COMM_TITLE_SQUAD_LEADER
