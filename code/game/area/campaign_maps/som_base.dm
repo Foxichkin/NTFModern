@@ -346,7 +346,7 @@
 /area/canora_desert/surface/building/command
 	name = "Command Dome"
 	icon_state = "blueold"
-	ambience = list('sound/ambience/ambimalf.ogg', '')
+	ambience = list('sound/ambience/ambimalf.ogg')
 	minimap_color = MINIMAP_AREA_COMMAND
 	ceiling = CEILING_METAL
 
