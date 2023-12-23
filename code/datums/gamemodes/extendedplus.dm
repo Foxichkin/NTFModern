@@ -56,12 +56,10 @@
 	respawn_time = 15 SECONDS
 	bioscan_interval = 1 HOURS
 
-
 /datum/game_mode/infestation/can_start(bypass_checks = TRUE)
 	. = ..()
 	if(!.)
 		return
-
 
 //sets NTC and SOM squads
 /datum/game_mode/infestation/extended_plus/set_valid_squads()
