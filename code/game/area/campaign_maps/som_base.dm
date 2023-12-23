@@ -345,150 +345,195 @@
 
 /area/canora_desert/surface/building/command
 	name = "Command Dome"
-	icon_state = "bridge"
+	icon_state = "blueold"
+	ambience = list('sound/ambience/ambimalf.ogg', '')
 	minimap_color = MINIMAP_AREA_COMMAND
-	ceiling = underground
+	ceiling = CEILING_METAL
 
-/area/canora_desert/surface/outside/desert	
+/area/canora_desert/surface/outside/desert
 	name = "canora_desert"
+	icon_state = "transparent"
 	ceiling = CEILING_NONE
 
+/area/canora_desert/surface/underground/cave
+	name = "North Caves"
+	icon_state = "north"
+	ceiling = CEILING_DEEP_UNDERGROUND
+	ambience = list()
+
+/area/canora_desert/surface/underground/mines
+	name = "South Mining"
+	icon_state = "south"
+	ceiling = CEILING_DEEP_UNDERGROUND
+	ambience = list()
 /area/canora_desert/surface/building/closed
 	name = "off borders"
+	icon_state = "dark"
 	ceiling = CEILING_DEEP_UNDERGROUND_METAL
 
 /area/canora_desert/surface/building/abandoned_wooden_building
 	name = "abandoned wooden building"
 	ceiling = CEILING_METAL
-
+	icon_state = "blank"
+	ambience = list('sound/ambience/ambiwood')
 /area/canora_desert/surface/building/abandoned_wooden_building2
 	name = "abandoned wooden building"
 	ceiling = CEILING_METAL
-
+	icon_state = "blank"
+	ambience = list('sound/ambience/ambiwood')
 /area/canora_desert/surface/building/street_food_canora
 	name = "street food"
 	ceiling = CEILING_METAL
-
+	icon_state = "blank"
 /area/canora_desert/surface/building/crashed
 	name = "utterly destroyed building"
 	ceiling = CEILING_METAL
-
+	icon_state = "blank"
+	ambience = list('sound/ambience/ambiwood')
 /area/canora_desert/surface/building/police_station
 	name = "Police Station"
+	icon_state = "security"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_SEC
 
 /area/canora_desert/surface/building/som_engineering
 	name = "SOM Engineering"
+	icon_state = "yellow"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_ENGI
 
 /area/canora_desert/surface/building/som_medical
 	name = "SOM Sanitary"
+	icon_state = "medbay2"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
-	
+
 /area/canora_desert/surface/building/som_janitor
 	name = "Janitorial Custody"
+	icon_state = "purple"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_RESEARCH
 
 /area/canora_desert/surface/building/som_barracks
 	name = "SOM barracks"
+	icon_state = "living"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_LIVING
 
 /area/canora_desert/surface/building/som_restrooms
 	name = "Restrooms"
+	icon_state = "green"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_LIVING
 
 /area/canora_desert/surface/building/som_smaint
 	name = "South Maintenance"
+	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_engimedmaint
 	name = "Engi-Med Maintenance"
+	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_mechbay_maint
 	name = "Robotics Maintenance"
+	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_torturechamber
 	name = "Torture Chamber"
+	icon_state = "red"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_SEC
 
 /area/canora_desert/surface/building/som_security_hallway
 	name = "Security Hallway"
+	icon_state = "brig"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_SEC
 
 /area/canora_desert/surface/building/som_armory
 	name = "Secure Armory"
+	icon_state = "armory"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_SEC
 
 /area/canora_desert/surface/building/som_prison
 	name = "Prisoner Contaiment"
+	icon_state = "orange"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_SEC
 
 /area/canora_desert/surface/building/som_kitchen
 	name = "Food Court"
+	icon_state = "living"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_robotics
 	name = "Robotics Hallway"
+	icon_state = "explored"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_RESEARCH
 
 /area/canora_desert/surface/building/som_sservicing
 	name = "Robot Servicing"
+	icon_state = "explored"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_mechbay
 	name = "Mech Bay"
+	icon_state = "storage"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_admiral
 	name = "Admiral Quarters"
+	icon_state = "bluenew"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_COMMAND
 
 /area/canora_desert/surface/building/som_surgery1
 	name = "Surgery Operation Room 1"
-	ceiling = CEILING_METAL
-	minimap_color = MINIMAP_AREA_MEDBAY
- 
-/area/canora_desert/surface/building/som_surgery2
-	name = "Surgery Operation Room 2"
-	ceiling = CEILING_METAL
-	minimap_color = MINIMAP_AREA_MEDBAY
- 
-/area/canora_desert/surface/building/som_chemistry
-	name = "Chemistry"
+	icon_state = "medbay2"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
+/area/canora_desert/surface/building/som_surgery2
+	name = "Surgery Operation Room 2"
+	icon_state = "medbay1"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_MEDBAY
+
+/area/canora_desert/surface/building/som_chemistry
+	name = "Chemistry"
+	icon_state = "explored"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_RESEARCH
+
 /area/canora_desert/surface/building/som_morgue
 	name = "Morgue"
+	icon_state = "blue"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
 /area/canora_desert/surface/building/som_nmaint
 	name = "North Maintenance"
+	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_floortwomain
 	name = "Main Tower Area"
+	icon_state = "red"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_engidome
 	name = "SMES Dome"
+	icon_state = "engine_smes"
 	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_ENGI
 
-/area/canora_desert/surface/building/som_caves
-	name = "Canora Caves"
-	ceiling = CEILING_DEEP_UNDERGROUND
+/area/canora_desert/surface/building/som_requesitions
+	name = "Syndicate Delivery"
+	icon_state = "req"
+	ceiling = CEILING_METAL
+	minimap_color = MINIMAP_AREA_REQ
