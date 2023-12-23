@@ -51,9 +51,9 @@
 #define MODE_DISALLOW_RAILGUN (1<<15)
 
 #define MODE_INFESTATION_X_MAJOR "Xenomorph Major Victory"
-#define MODE_INFESTATION_M_MAJOR "Marine Major Victory"
+#define MODE_INFESTATION_M_MAJOR "Ninetails Major Victory"
 #define MODE_INFESTATION_X_MINOR "Xenomorph Minor Victory"
-#define MODE_INFESTATION_M_MINOR "Marine Minor Victory"
+#define MODE_INFESTATION_M_MINOR "Minetails Minor Victory"
 #define MODE_INFESTATION_DRAW_DEATH "DRAW: Mutual Annihilation"
 
 #define MODE_GENERIC_DRAW_NUKE "DRAW: Nuclear Explosion"
