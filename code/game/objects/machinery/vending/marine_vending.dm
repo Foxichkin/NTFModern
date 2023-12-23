@@ -843,7 +843,7 @@
 /*
 					/obj/item/reagent_containers/food/snacks/mre_pack/xmas1 = 25,
 					/obj/item/reagent_containers/food/snacks/mre_pack/xmas2 = 25,
-					/obj/item/reagent_containers/food/snacks/mre_pack/xmas3 = 25)*/
+					/obj/item/reagent_containers/food/snacks/mre_pack/xmas3 = 25*/
 
 /obj/machinery/vending/marineFood/som
 	name = "\improper SOM Food and Drinks Vendor"
@@ -1694,7 +1694,7 @@
 	isshared = TRUE
 
 	products = list( 
-		"Rifles" = list (
+		"Rifles" = list(
 			/obj/item/weapon/gun/rifle/som_carbine = -1,
 			/obj/item/weapon/gun/rifle/mpi_km = -1,
 			/obj/item/ammo_magazine/rifle/mpi_km/carbine = -1,
@@ -2171,7 +2171,7 @@
 		"Pouches" = list(
 			/obj/item/storage/pouch/grenade/som = -1,
 			/obj/item/storage/pouch/general/som = -1,
-			/obj/item/storage/pouch/magazine/large/som = -1
+			/obj/item/storage/pouch/magazine/large/som = -1,
 			/obj/item/storage/pouch/pistol/som = -1,
 			/obj/item/storage/pouch/shotgun/som = -1,
 			/obj/item/storage/pouch/construction/som = -1,

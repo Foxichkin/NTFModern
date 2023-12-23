@@ -12,7 +12,7 @@
 //General
 /datum/job/som/command/commander
 	title = SOM_COMMANDER
-	access = list (ALL_SOM_ACCESS)
+	access = ALL_SOM_ACCESS
 	req_admin_notify = TRUE
 	paygrade = "SOM_O7"
 	comm_title = "CMDR"
@@ -83,7 +83,8 @@ Godspeed, commander! And remember, you are not above the law."})
 //Field Commander
 /datum/job/som/command/fieldcommander
 	title = SOM_FIELD_COMMANDER
-	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ACCESS_SOM_ADMIRAL,ACCESS_SOM_SQUADLEADER)
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ACCESS_SOM_SECURITY,ACCESS_SOM_ARMORY,ACCESS_SOM_SQUADLEADER,ALL_ANTAGONIST_ACCESS)
+	minimal_access = list(ALL_SOM_ACCESS,ALL_ANTAGONIST_ACCESS)
 	req_admin_notify = TRUE
 	paygrade = "SOM_O3"
 	comm_title = "FCDR"
@@ -177,7 +178,8 @@ Make the SOM proud!"})
 //Staff Officer
 /datum/job/som/command/staffofficer
 	title = SOM_STAFF_OFFICER
-	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ACCESS_SOM_ARMORY,ACCESS_SOM_SECURITY,ALL_ANTAGONIST_ACCESS)
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ACCESS_SOM_ARMORY,ACCESS_SOM_SECURITY,ALL_ANTAGONIST_ACCESS)
+	minimal_access = list(ALL_SOM_ACCESS,ALL_ANTAGONIST_ACCESS)
 	paygrade = "SOM_W5"
 	comm_title = "SO"
 	total_positions = 4
@@ -241,7 +243,8 @@ You are in charge of logistics and the overwatch system. You are also in line to
 	paygrade = "SOM_W2"
 	comm_title = "PO"
 	total_positions = 2
-	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND, ALL_ANTAGONIST_ACCESS)
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ALL_ANTAGONIST_ACCESS)
+	minimal_access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_ADMIRAL,ACCESS_SOM_ARMORY,ACCESS_SOM_SECURITY,ALL_ANTAGONIST_ACCESS)
 	skills_type = /datum/skills/pilot
 	display_order = JOB_DISPLAY_ORDER_PILOT_OFFICER
 	outfit = /datum/outfit/job/som/command/pilot
@@ -377,7 +380,7 @@ You can serve your Division in a variety of roles, so choose carefully."})
 	comm_title = "CE"
 	selection_color = "#ffeeaa"
 	total_positions = 1
-	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_ENGINEERING,ACCESS_SOM_COMMAND,ACCESS_SOM_REQUESITIONS,ALL_ANTAGONIST_ACCESS)
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_ENGINEERING,ACCESS_SOM_COMMAND,ACCESS_SOM_REQUESITIONS,ALL_ANTAGONIST_ACCESS)
 	skills_type = /datum/skills/ce
 	display_order = JOB_DISPLAY_ORDER_CHIEF_ENGINEER
 	outfit = /datum/outfit/job/som/engineering/chief
@@ -493,7 +496,6 @@ requisitions line and later on to be ready to send supplies for marines who are 
 /datum/outfit/job/som/engineering/tech
 	name = SOM_TECH
 	jobtype = /datum/job/som/engineering/tech
-	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_ENGINEERING,ACCESS_SOM_REQUESITIONS,ALL_ANTAGONIST_ACCESS)
 	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/utility/full
 	ears = /obj/item/radio/headset/mainship/st
@@ -521,7 +523,8 @@ requisitions line and later on to be ready to send supplies for marines who are 
 	comm_title = "RO"
 	selection_color = "#9990B2"
 	total_positions = 1
-	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_REQUESITIONS,ACCESS_SOM_COMMAND,ACCESS_SOM_ENGINEERING,ALL_ANTAGONIST_ACCESS)
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_REQUESITIONS,ACCESS_SOM_COMMAND,ACCESS_SOM_ENGINEERING,ALL_ANTAGONIST_ACCESS)
+	minimal_access = ALL_SOM_ACCESS
 	skills_type = /datum/skills/ro
 	display_order = JOB_DISPLAY_ORDER_REQUISITIONS_OFFICER
 	outfit = /datum/outfit/job/som/requisitions/officer
@@ -581,19 +584,21 @@ A happy base is a well-functioning base."})
 
 /datum/job/som/medical
 	job_category = JOB_CAT_MEDICAL
+	access = ACCESS_SOM_MEDICAL
 	selection_color = "#BBFFBB"
 	exp_type_department = EXP_TYPE_MEDICAL
 
 
 /datum/job/som/medical/professor
 	title = SOM_CHIEF_MEDICAL_OFFICER
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_MEDICAL,ACCESS_SOM_COMMAND,ALL_ANTAGONIST_ACCESS)
 	req_admin_notify = TRUE
 	comm_title = "CMO"
 	paygrade = "CHO"
 	total_positions = 1
 	supervisors = "the acting commander"
 	selection_color = "#99FF99"
-	access = list (ACCESS_SOM_DEFAULT,ACCESS_SOM_MEDICAL,ACCESS_SOM_COMMAND,ALL_ANTAGONIST_ACCESS)
+
 	skills_type = /datum/skills/cmo
 	display_order = JOB_DISPLAY_ORDER_CHIEF_MEDICAL_OFFICER
 	outfit = /datum/outfit/job/som/medical/professor
@@ -720,7 +725,7 @@ You are also an expert when it comes to medication and treatment. If you do not 
 
 /datum/job/som/civilian/chef
 	title = SOM_CHEF
-	access = list (ACCESS_SOM_DEFAULT,ALL_ANTAGONIST_ACCESS)
+	access = list(ACCESS_SOM_DEFAULT,ALL_ANTAGONIST_ACCESS)
 	comm_title = "CHEF"
 	paygrade = "SOM_E1"
 	total_positions = 2
