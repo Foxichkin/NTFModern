@@ -1,6 +1,6 @@
 /obj/machinery/vending/weapon/som
 	name = "/improper SOC weapon rack"
-	faction =FACTION_SOM
+	faction = FACTION_SOM
 	desc = "Syndicate Official Contraband weapon rack, here you get your guns."
 	icon_state = "marinearmory"
 	icon_vend = "marinearmory-vend"
@@ -9,7 +9,7 @@
 	product_ads = ""
 	isshared = TRUE
 
-	products = list( 
+	products = list(
 		"Rifles" = list (
 			/obj/item/weapon/gun/rifle/som_carbine = -1,
 			/obj/item/weapon/gun/rifle/mpi_km = -1,
@@ -493,7 +493,7 @@
 			/obj/item/storage/pouch/construction/som = -1,
 			/obj/item/storage/pouch/medkit/som = -1,
 			/obj/item/storage/pouch/medical_injectors/som = -1,
-			/obj/item/storage/pouch/firstaid/som = -1, 
+			/obj/item/storage/pouch/firstaid/som = -1,
 			/obj/item/storage/pouch/tools/som = -1,
 		),
 		"Headwear" = list(
