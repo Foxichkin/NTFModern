@@ -1633,13 +1633,6 @@
 /obj/item/stool,
 /turf/open/floor/iron/grimy,
 /area/canora_desert/surface/building/som_admiral)
-"hn" = (
-/obj/machinery/camera/autoname/mainship/somship{
-	dir = 4
-	},
-/obj/machinery/vending/snack,
-/turf/open/floor/mainship/mono,
-/area/mainship/squads/general/som)
 "hp" = (
 /turf/closed/wall/desert,
 /area/space)
@@ -2774,12 +2767,6 @@
 	static_lighting = 0;
 	base_lighting_alpha = 255
 	})
-"lP" = (
-/obj/machinery/vending/SyndiMed,
-/turf/open/floor/mainship/silver{
-	dir = 4
-	},
-/area/canora_desert/surface/building/som_medical)
 "lQ" = (
 /obj/effect/spawner/random/decal/blood,
 /obj/structure/cable,
@@ -4753,6 +4740,10 @@
 	dir = 1
 	},
 /area/canora_desert/surface/building/som_barracks)
+"tP" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/mainship/mono,
+/area/mainship/squads/general/som)
 "tR" = (
 /obj/structure/lattice,
 /obj/effect/spawner/gibspawner/xeno,
@@ -6206,6 +6197,13 @@
 "zL" = (
 /turf/open/floor/mainship/office,
 /area/canora_desert/surface/building/command)
+"zO" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/tank/oxygen,
+/turf/open/floor/mainship/mono,
+/area/mainship/squads/general/som)
 "zQ" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer2{
 	dir = 8
@@ -6253,12 +6251,11 @@
 	},
 /area/space)
 "Aa" = (
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/vending/SyndiMed,
+/turf/open/floor/mainship/silver{
+	dir = 4
 	},
-/obj/machinery/atmospherics/components/unary/tank/oxygen,
-/turf/open/floor/mainship/mono,
-/area/mainship/squads/general/som)
+/area/canora_desert/surface/building/som_medical)
 "Ab" = (
 /obj/structure/holowindow{
 	dir = 1
@@ -6697,10 +6694,6 @@
 	static_lighting = 0;
 	base_lighting_alpha = 255
 	})
-"BV" = (
-/obj/machinery/vending/cigarette,
-/turf/open/floor/mainship/mono,
-/area/mainship/squads/general/som)
 "BW" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/maintenance{
@@ -7512,10 +7505,6 @@
 "Gf" = (
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
-"Gg" = (
-/obj/machinery/vending/coffee,
-/turf/open/floor/mainship/mono,
-/area/mainship/squads/general/som)
 "Gh" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -7914,6 +7903,14 @@
 	dir = 4
 	},
 /turf/open/floor/elevatorshaft,
+/area/canora_desert/surface/building/som_floortwomain)
+"Ix" = (
+/obj/machinery/door/airlock/multi_tile/mainship/secdoor/glass{
+	req_access = null;
+	name = "External Glass Airlock";
+	dir = 2
+	},
+/turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_floortwomain)
 "Iy" = (
 /obj/effect/turf_decal/grassdecal/corner2{
@@ -9465,6 +9462,10 @@
 /obj/structure/lattice,
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/building/som_engineering)
+"Qn" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/mainship/mono,
+/area/mainship/squads/general/som)
 "Qo" = (
 /obj/machinery/door/airlock/maintenance{
 	dir = 8;
@@ -10185,6 +10186,13 @@
 	dir = 1
 	},
 /area/canora_desert/surface/building/command)
+"SY" = (
+/obj/machinery/camera/autoname/mainship/somship{
+	dir = 4
+	},
+/obj/machinery/vending/snack,
+/turf/open/floor/mainship/mono,
+/area/mainship/squads/general/som)
 "SZ" = (
 /obj/effect/spawner/random/misc/structure/girder,
 /turf/open/floor/plating/icefloor/warnplate,
@@ -52347,10 +52355,10 @@ sX
 sX
 cN
 oD
-Aa
-BV
-hn
-Gg
+zO
+tP
+SY
+Qn
 Bc
 Ah
 Ah
@@ -57565,7 +57573,7 @@ Hp
 fZ
 Vm
 Wb
-lP
+Aa
 TL
 OE
 TL
@@ -77733,7 +77741,7 @@ mO
 mO
 mO
 mx
-mx
+Ix
 mO
 mO
 mO
