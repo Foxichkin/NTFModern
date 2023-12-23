@@ -16,11 +16,7 @@
 	ceiling = 2
 	})
 "i" = (
-/obj/machinery/door/poddoor/shutters/transit/nonsmoothing{
-	icon_state = "shutter0";
-	density = 0;
-	opacity = 0
-	},
+/obj/machinery/door/poddoor/shutters/transit/nonsmoothing,
 /turf/open/floor/mainship/stripesquare,
 /area/shuttle/dropship/minielevator{
 	ceiling = 2
@@ -49,9 +45,6 @@
 	})
 "C" = (
 /obj/machinery/door/poddoor/shutters/transit/nonsmoothing{
-	icon_state = "shutter0";
-	density = 0;
-	opacity = 0;
 	dir = 2
 	},
 /turf/open/floor/mainship/stripesquare,
