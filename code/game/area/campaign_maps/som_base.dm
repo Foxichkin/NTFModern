@@ -375,12 +375,12 @@
 	name = "abandoned wooden building"
 	ceiling = CEILING_METAL
 	icon_state = "blank"
-	ambience = list('sound/ambience/ambiwood')
+	ambience = list('sound/ambience/ambiwood.ogg')
 /area/canora_desert/surface/building/abandoned_wooden_building2
 	name = "abandoned wooden building"
 	ceiling = CEILING_METAL
 	icon_state = "blank"
-	ambience = list('sound/ambience/ambiwood')
+	ambience = list('sound/ambience/ambiwood.ogg')
 /area/canora_desert/surface/building/street_food_canora
 	name = "street food"
 	ceiling = CEILING_METAL
@@ -389,7 +389,7 @@
 	name = "utterly destroyed building"
 	ceiling = CEILING_METAL
 	icon_state = "blank"
-	ambience = list('sound/ambience/ambiwood')
+	ambience = list('sound/ambience/ambiwood.ogg')
 /area/canora_desert/surface/building/police_station
 	name = "Police Station"
 	icon_state = "security"
