@@ -83,9 +83,8 @@ Godspeed, commander! And remember, you are not above the law."})
 //Field Commander
 /datum/job/som/command/fieldcommander
 	title = SOM_FIELD_COMMANDER
-	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ACCESS_SOM_SECURITY,ACCESS_SOM_ARMORY,ACCESS_SOM_SQUADLEADER,ALL_ANTAGONIST_ACCESS)
-	minimal_access = list(ALL_SOM_ACCESS,ALL_ANTAGONIST_ACCESS)
-	req_admin_notify = TRUE
+	access = list(ACCESS_SOM_DEFAULT,ACCESS_SOM_COMMAND,ACCESS_SOM_SECURITY,ACCESS_SOM_ARMORY,ACCESS_SOM_SQUADLEADER,)
+	minimal_access = list(ALL_SOM_ACCESS, ALL_ANTAGONIST_ACCESS)
 	paygrade = "SOM_O3"
 	comm_title = "FCDR"
 	total_positions = 1

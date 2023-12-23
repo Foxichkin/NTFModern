@@ -518,7 +518,7 @@
 /area/canora_desert/surface/building/som_morgue
 	name = "Morgue"
 	icon_state = "blue"
-	ambience = list('sound/ambience/ambimo1', 'sound/ambience/ambimo2')
+	ambience = list('sound/ambience/ambimo1.ogg', 'sound/ambience/ambimo2.ogg')
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
@@ -547,3 +547,8 @@
 	icon_state = "req"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_REQ
+
+	/area/canora_desert/surface/building/som_spider
+	name = "Aviary"
+	icon_state = "green"
+	ceiling = CEILING_METAL
