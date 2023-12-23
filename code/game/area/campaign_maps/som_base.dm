@@ -353,19 +353,20 @@
 /area/canora_desert/surface/outside/desert
 	name = "canora_desert"
 	icon_state = "transparent"
+	ambience = list('sound/ambience/ambiwind.ogg', 'sound/ambience/ambiatmos2.ogg')
 	ceiling = CEILING_NONE
 
 /area/canora_desert/surface/underground/cave
 	name = "North Caves"
 	icon_state = "north"
 	ceiling = CEILING_DEEP_UNDERGROUND
-	ambience = list()
+	ambience = list('sound/ambience/ambicave.ogg', 'sound/ambience/ambigen11.ogg')
 
 /area/canora_desert/surface/underground/mines
 	name = "South Mining"
 	icon_state = "south"
 	ceiling = CEILING_DEEP_UNDERGROUND
-	ambience = list()
+	ambience = list('sound/ambience/ambicave.ogg', 'sound/ambience/ambigen11.ogg')
 /area/canora_desert/surface/building/closed
 	name = "off borders"
 	icon_state = "dark"
@@ -399,12 +400,13 @@
 /area/canora_desert/surface/building/som_engineering
 	name = "SOM Engineering"
 	icon_state = "yellow"
+	ambience = list('sound/ambience/ambigen1.ogg', 'sound/ambience/ambigen10.ogg')
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_ENGI
 
 /area/canora_desert/surface/building/som_medical
 	name = "SOM Sanitary"
-	icon_state = "medbay2"
+	icon_state = "medbay1"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
@@ -428,16 +430,19 @@
 
 /area/canora_desert/surface/building/som_smaint
 	name = "South Maintenance"
+	ambience = list('sound/ambience/ambibigroom.ogg')
 	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_engimedmaint
 	name = "Engi-Med Maintenance"
+	ambience = list('sound/ambience/ambibigroom.ogg')
 	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_mechbay_maint
 	name = "Robotics Maintenance"
+	ambience = list('sound/ambience/ambibigroom.ogg')
 	icon_state = "dark"
 	ceiling = CEILING_METAL
 
@@ -494,13 +499,13 @@
 
 /area/canora_desert/surface/building/som_surgery1
 	name = "Surgery Operation Room 1"
-	icon_state = "medbay2"
+	icon_state = "medbay"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
 /area/canora_desert/surface/building/som_surgery2
 	name = "Surgery Operation Room 2"
-	icon_state = "medbay1"
+	icon_state = "medbay"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
@@ -513,27 +518,32 @@
 /area/canora_desert/surface/building/som_morgue
 	name = "Morgue"
 	icon_state = "blue"
+	ambience = list('sound/ambience/ambimo1', 'sound/ambience/ambimo2')
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_MEDBAY
 
 /area/canora_desert/surface/building/som_nmaint
 	name = "North Maintenance"
+	ambience = list('sound/ambience/ambibigroom.ogg')
 	icon_state = "dark"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_floortwomain
 	name = "Main Tower Area"
+	ambience = list('sound/ambience/ambibigroom.ogg')
 	icon_state = "red"
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/building/som_engidome
 	name = "SMES Dome"
 	icon_state = "engine_smes"
+
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_ENGI
 
 /area/canora_desert/surface/building/som_requesitions
 	name = "Syndicate Delivery"
+	ambience = list('sound/ambience/ambibigroom.ogg', 'sound/ambience/ambicargo.ogg')
 	icon_state = "req"
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_REQ
