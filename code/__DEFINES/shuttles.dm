@@ -115,4 +115,8 @@
 #define SHUTTLE_SUPPLY "supply"
 #define SHUTTLE_SHIPELEVATOR "shipelevator"
 #define SHUTTLE_ELEVATOR "elevator"
+<<<<<<< Updated upstream
+=======
+#define SHUTTLE_SOMTADPOLE "calico"
+>>>>>>> Stashed changes
 
