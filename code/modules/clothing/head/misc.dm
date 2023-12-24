@@ -7,7 +7,7 @@
 	item_state = "centhat"
 	siemens_coefficient = 0.9
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/hairflower
@@ -17,7 +17,7 @@
 	item_state = "hairflower"
 	flags_armor_protection = HEAD
 	w_class = WEIGHT_CLASS_TINY
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/powdered_wig
@@ -26,7 +26,7 @@
 	icon_state = "pwig"
 	item_state = "pwig"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/that
@@ -36,7 +36,7 @@
 	item_state = "that"
 	siemens_coefficient = 0.9
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/redcoat
@@ -44,7 +44,7 @@
 	icon_state = "redcoat"
 	desc = "<i>'I guess it's a redhead.'</i>"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/plaguedoctorhat
@@ -54,7 +54,7 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/hasturhood
@@ -64,7 +64,7 @@
 	flags_inventory = COVEREYES
 	flags_inv_hide = HIDEEARS|HIDEALLHAIR
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/nursehat
@@ -73,7 +73,7 @@
 	icon_state = "nursehat"
 	siemens_coefficient = 0.9
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/syndicatefake
@@ -86,7 +86,7 @@
 	siemens_coefficient = 2
 	flags_armor_protection = HEAD
 	anti_hug = 1
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/cueball
@@ -98,7 +98,7 @@
 	item_state="cueball"
 	flags_inventory = NONE
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/greenbandanna
@@ -109,7 +109,7 @@
 	flags_inventory = NONE
 	flags_inv_hide = NONE
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/cardborg
@@ -120,7 +120,7 @@
 	flags_inventory = COVERMOUTH|COVEREYES
 	flags_inv_hide = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEALLHAIR
 	flags_armor_protection = HEAD|FACE|EYES
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/justice
@@ -131,7 +131,7 @@
 	flags_inventory = COVERMOUTH|COVEREYES
 	flags_inv_hide = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEALLHAIR
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/flatcap
@@ -141,7 +141,7 @@
 	item_state = "detective"
 	siemens_coefficient = 0.9
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/pirate
@@ -150,7 +150,7 @@
 	icon_state = "pirate"
 	item_state = "pirate"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/hgpiratecap
@@ -168,7 +168,7 @@
 	icon_state = "bandanna_brown"
 	item_state = "bandanna_brown"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/bandanna/grey
@@ -177,7 +177,7 @@
 	icon_state = "bandanna_grey"
 	item_state = "bandanna_grey"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/bandanna/red
@@ -186,7 +186,7 @@
 	icon_state = "bandanna_red"
 	item_state = "bandanna_red"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/bowler
@@ -195,7 +195,7 @@
 	icon_state = "bowler"
 	item_state = "bowler"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 //stylish bs12 hats
@@ -206,7 +206,7 @@
 	item_state = "bowler_hat"
 	desc = "For the gentleman of distinction."
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/beaverhat
@@ -215,7 +215,7 @@
 	item_state = "beaver_hat"
 	desc = "Soft felt makes this hat both comfortable and elegant."
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/boaterhat
@@ -224,7 +224,7 @@
 	item_state = "boater_hat"
 	desc = "The ultimate in summer fashion."
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/fedora
@@ -233,7 +233,7 @@
 	item_state = "fedora"
 	desc = "A sharp, stylish hat."
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/feathertrilby
@@ -242,7 +242,7 @@
 	item_state = "feather_trilby"
 	desc = "A sharp, stylish hat with a feather."
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/fez
@@ -251,7 +251,7 @@
 	item_state = "fez"
 	desc = "You should wear a fez. Fezzes are cool."
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 //end bs12 hats
@@ -265,7 +265,7 @@
 	flags_inv_hide = HIDEALLHAIR
 	siemens_coefficient = 2
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/chicken
@@ -277,7 +277,7 @@
 	flags_inv_hide = HIDEALLHAIR
 	siemens_coefficient = 2
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/xenos
@@ -290,7 +290,7 @@
 	siemens_coefficient = 2
 	flags_armor_protection = HEAD|FACE|EYES
 	anti_hug = 10 //Lel
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/white_dress
@@ -299,7 +299,7 @@
 	icon_state = "white_dress" //with thanks to Baystation12
 	item_state = "white_dress" //with thanks to Baystation12
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/garrisoncap
@@ -308,7 +308,7 @@
 	icon_state = "garrisoncap" //with thanks to Fitz 'Pancake' Sholl
 	item_state = "garrisoncap" //with thanks to Fitz 'Pancake' Sholl
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/servicecap
@@ -317,7 +317,7 @@
 	icon_state = "servicecap" //with thanks to Fitz 'Pancake' Sholl
 	item_state = "servicecap" //with thanks to Fitz 'Pancake' Sholl
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/serviceberet
@@ -326,7 +326,7 @@
 	icon_state = "beret_service"
 	item_state = "beret_service"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/servicecampaignhat
@@ -335,7 +335,7 @@
 	icon_state = "campaignhat_service"
 	item_state = "campaignhat_service"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/serviceushanka
@@ -344,7 +344,7 @@
 	icon_state = "ushanaka_service"
 	item_state = "ushanaka_service"
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP
 
 /obj/item/clothing/head/techpriest
@@ -354,5 +354,5 @@
 	item_state = "tp_hood"
 	flags_inv_hide = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEALLHAIR
 	flags_armor_protection = HEAD
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 55, BIO = 55, FIRE = 55, ACID = 60)
 	flags_armor_features = ARMOR_NO_DECAP

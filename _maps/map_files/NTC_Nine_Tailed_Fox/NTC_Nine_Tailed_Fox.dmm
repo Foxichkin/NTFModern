@@ -5739,6 +5739,10 @@
 /obj/machinery/door/poddoor/shutters/mainship/selfdestruct{
 	dir = 1
 	},
+/obj/machinery/door/poddoor/mainship/open/cic{
+	id = "shipside_cic_lockdown";
+	dir = 2
+	},
 /turf/open/floor/plating,
 /area/centcom/valhalla/crew_quarters/cryo{
 	static_lighting = 1;
@@ -9827,6 +9831,10 @@
 	})
 "iWD" = (
 /obj/structure/window/framed/mainship,
+/obj/machinery/door/poddoor/mainship/open/cic{
+	id = "shipside_cic_lockdown";
+	dir = 2
+	},
 /turf/open/floor/plating,
 /area/centcom/valhalla/crew_quarters/cryo{
 	static_lighting = 1;
@@ -43361,7 +43369,7 @@ vZa
 tnt
 lZb
 lZb
-lZb
+gTE
 urx
 ixQ
 urx
