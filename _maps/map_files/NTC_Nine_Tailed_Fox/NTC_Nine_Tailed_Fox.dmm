@@ -14872,7 +14872,8 @@
 /obj/effect/ai_node,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_one_access = list(2,7)
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/hull/upper_hull)
@@ -16728,7 +16729,8 @@
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_one_access = list(2,7)
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/hull/upper_hull)
@@ -33891,7 +33893,7 @@ kmh
 kmh
 kmh
 fbt
-tgQ
+kyS
 tKP
 kyS
 wDa
@@ -36084,7 +36086,7 @@ fOz
 fOz
 fOz
 wDa
-kyS
+orA
 kjD
 kyS
 mkZ
@@ -37294,7 +37296,7 @@ wDa
 wDa
 wDa
 wDa
-orA
+kyS
 juD
 kyS
 cam
@@ -41650,7 +41652,7 @@ cuj
 bol
 gFz
 mmS
-orA
+kyS
 euU
 kyS
 cam
@@ -42860,7 +42862,7 @@ knL
 knL
 tZK
 mmS
-kyS
+jSO
 xzp
 oDm
 mIH
@@ -43586,7 +43588,7 @@ fVq
 rXb
 paC
 mmS
-cam
+kyS
 juD
 kyS
 aZO
@@ -43828,7 +43830,7 @@ rnp
 aBQ
 cNP
 mmS
-jSO
+kyS
 juD
 kyS
 eeT
@@ -64796,7 +64798,7 @@ coS
 coS
 oSb
 qZo
-iWx
+qZo
 lwu
 vRt
 iie
@@ -65272,7 +65274,7 @@ cSI
 cSI
 cSI
 cSI
-qZo
+iWx
 gHp
 rcP
 qnG
