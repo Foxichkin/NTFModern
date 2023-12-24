@@ -148,8 +148,6 @@
 			remove_danger_overlay() //Remove the exclamation overlay as we pick it up
 			facehugger_register_source(H)
 			return ..() // These can pick up huggers.
-		else
-			return FALSE // The rest can't.
 	if(stat == DEAD || (sterile && !combat_hugger))
 		return ..() // Dead or sterile (lamarr) can be picked.
 	else if(stat == CONSCIOUS && user.can_be_facehugged(src, provoked = TRUE)) // If you try to take a healthy one it will try to hug or attack you.

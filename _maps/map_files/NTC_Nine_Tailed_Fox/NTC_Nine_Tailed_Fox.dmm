@@ -1825,7 +1825,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
 	},
-/turf/open/floor/mainship/mono,
+/obj/structure/cable,
+/turf/open/floor/plating/plating_catwalk,
 /area/mainship/hallways/port_umbilical{
 	name = "Ship Floor 2 Hallways"
 	})
@@ -2328,7 +2329,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
 	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/mainship/mono,
 /area/mainship/hallways/port_umbilical{
 	name = "Ship Floor 2 Hallways"
 	})
@@ -5737,6 +5738,10 @@
 /obj/structure/window/framed/mainship,
 /obj/machinery/door/poddoor/shutters/mainship/selfdestruct{
 	dir = 1
+	},
+/obj/machinery/door/poddoor/mainship/open/cic{
+	id = "shipside_cic_lockdown";
+	dir = 2
 	},
 /turf/open/floor/plating,
 /area/centcom/valhalla/crew_quarters/cryo{
@@ -9826,6 +9831,10 @@
 	})
 "iWD" = (
 /obj/structure/window/framed/mainship,
+/obj/machinery/door/poddoor/mainship/open/cic{
+	id = "shipside_cic_lockdown";
+	dir = 2
+	},
 /turf/open/floor/plating,
 /area/centcom/valhalla/crew_quarters/cryo{
 	static_lighting = 1;
@@ -14863,7 +14872,8 @@
 /obj/effect/ai_node,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_one_access = list(2,7)
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/hull/upper_hull)
@@ -16719,7 +16729,8 @@
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/mainship/generic{
-	dir = 1
+	dir = 1;
+	req_one_access = list(2,7)
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/hull/upper_hull)
@@ -24460,13 +24471,11 @@
 /area/mainship/squads/req)
 "wJj" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1{
-	dir = 8
-	},
 /obj/effect/ai_node,
 /obj/structure/disposalpipe/junction{
 	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plating/plating_catwalk,
 /area/mainship/hallways/bow_hallway{
 	name = "Ship Floor 1 Hallways"
@@ -33884,7 +33893,7 @@ kmh
 kmh
 kmh
 fbt
-tgQ
+kyS
 tKP
 kyS
 wDa
@@ -36077,7 +36086,7 @@ fOz
 fOz
 fOz
 wDa
-kyS
+orA
 kjD
 kyS
 mkZ
@@ -37287,7 +37296,7 @@ wDa
 wDa
 wDa
 wDa
-orA
+kyS
 juD
 kyS
 cam
@@ -37365,7 +37374,7 @@ gXZ
 hXu
 baz
 uIj
-gXZ
+hXu
 bCS
 hXu
 baz
@@ -41643,7 +41652,7 @@ cuj
 bol
 gFz
 mmS
-orA
+kyS
 euU
 kyS
 cam
@@ -42853,7 +42862,7 @@ knL
 knL
 tZK
 mmS
-kyS
+jSO
 xzp
 oDm
 mIH
@@ -43362,7 +43371,7 @@ vZa
 tnt
 lZb
 lZb
-lZb
+gTE
 urx
 ixQ
 urx
@@ -43579,7 +43588,7 @@ fVq
 rXb
 paC
 mmS
-cam
+kyS
 juD
 kyS
 aZO
@@ -43821,7 +43830,7 @@ rnp
 aBQ
 cNP
 mmS
-jSO
+kyS
 juD
 kyS
 eeT
@@ -64789,7 +64798,7 @@ coS
 coS
 oSb
 qZo
-iWx
+qZo
 lwu
 vRt
 iie
@@ -65265,7 +65274,7 @@ cSI
 cSI
 cSI
 cSI
-qZo
+iWx
 gHp
 rcP
 qnG

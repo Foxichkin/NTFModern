@@ -564,7 +564,7 @@ Your primary goal is to serve the hive, and ultimate goal is to liberate the col
 
 	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/distress/dutch
-	w_uniform = /obj/item/clothing/under/swimsuit/green
+	w_uniform = /obj/item/clothing/under/swimsuit/purple
 	shoes = /obj/item/clothing/shoes/sandal
 	belt = /obj/item/storage/holster/t19/full
 	r_store = /obj/item/flashlight

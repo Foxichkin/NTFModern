@@ -548,7 +548,7 @@
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_REQ
 
-	/area/canora_desert/surface/building/som_spider
+/area/canora_desert/surface/building/som_spider
 	name = "Aviary"
 	icon_state = "green"
 	ceiling = CEILING_METAL
