@@ -4,6 +4,7 @@
 	use_power = 0
 	req_one_access = list(ACCESS_MARINE_ENGINEERING, ACCESS_MARINE_ENGPREP, ACCESS_MARINE_LEADER)
 	hud_possible = list(MACHINE_HEALTH_HUD, MACHINE_AMMO_HUD)
+	allow_pass_flags = PASSABLE
 
 	///Spark system for making sparks
 	var/datum/effect_system/spark_spread/spark_system
@@ -44,6 +45,7 @@
 		var/mob/living/carbon/human/_deployer = deployer
 		var/obj/item/card/id/id = _deployer.get_idcard(TRUE)
 		iff_signal = id?.iff_signal
+		get_xeno_hivenumber()
 
 	knockdown_threshold = gun?.knockdown_threshold ? gun.knockdown_threshold : initial(gun.knockdown_threshold)
 	range = CHECK_BITFIELD(gun.turret_flags, TURRET_RADIAL) ?  gun.turret_range - 2 : gun.turret_range
@@ -74,7 +76,7 @@
 		return
 	var/marker_flags
 	switch(iff_signal)
-		if(TGMC_LOYALIST_IFF)
+		if(NTC_LOYALIST_IFF)
 			marker_flags = MINIMAP_FLAG_MARINE
 		if(SOM_IFF)
 			marker_flags = MINIMAP_FLAG_MARINE_SOM

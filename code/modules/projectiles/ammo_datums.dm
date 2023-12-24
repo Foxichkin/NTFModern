@@ -382,13 +382,16 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/pistol/tranq
 	name = "tranq bullet"
 	hud_state = "pistol_tranq"
-	damage = 25
+	armor_type = "bullet"
+	damage = 100
 	damage_type = STAMINA
+	shell_speed = 1.8
+	shrapnel_chance = 0.2
 
 /datum/ammo/bullet/pistol/tranq/on_hit_mob(mob/victim, obj/projectile/proj)
 	if(iscarbon(victim))
 		var/mob/living/carbon/carbon_victim = victim
-		carbon_victim.reagents.add_reagent(/datum/reagent/toxin/potassium_chlorophoride, 1)
+		carbon_victim.reagents.add_reagent(/datum/reagent/toxin/sleeptoxin, 3, no_overdose = TRUE)
 
 /datum/ammo/bullet/pistol/hollow
 	name = "hollowpoint pistol bullet"
@@ -1299,6 +1302,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "smartgun_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	damage = 50
+	max_range = 40
 	penetration = 25
 	sundering = 5
 	shell_speed = 4
@@ -2593,6 +2597,12 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	smoke.set_up(10, T, 11)
 	smoke.start()
 
+
+/datum/ammo/mortar/smoke/satrapine
+	smoketype = /datum/effect_system/smoke_spread/satrapine
+
+/datum/ammo/mortar/smoke/sleep
+	smoketype = /datum/effect_system/smoke_spread/sleepy
 /datum/ammo/mortar/smoke/plasmaloss
 	smoketype = /datum/effect_system/smoke_spread/plasmaloss
 
@@ -2653,7 +2663,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/mortar/rocket/minelayer/drop_nade(turf/T)
 	var/obj/item/explosive/mine/mine = new /obj/item/explosive/mine(T)
-	mine.deploy_mine(null, TGMC_LOYALIST_IFF)
+	mine.deploy_mine(null, NTC_LOYALIST_IFF)
 
 /datum/ammo/mortar/rocket/smoke
 	///the smoke effect at the point of detonation
@@ -4064,27 +4074,31 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "pepperball"
 	hud_state_empty = "pepperball_empty"
 	flags_ammo_behavior = AMMO_BALLISTIC
-	accurate_range = 15
+	accurate_range = 10//Short range, allows most guns to outrange it for suppressive fire reasons, and gives xenos more leeway to flee.
 	damage_type = STAMINA
 	armor_type = "bio"
-	damage = 70
-	penetration = 0
+	damage = 20
+	shell_speed = 1.8
 	shrapnel_chance = 0
 	///percentage of xenos total plasma to drain when hit by a pepperball
-	var/drain_multiplier = 0.05
+	var/drain_multiplier = 0.025
 	///Flat plasma to drain, unaffected by caste plasma amount.
-	var/plasma_drain = 25
+	//var/plasma_drain = 25
 
 /datum/ammo/bullet/pepperball/on_hit_mob(mob/living/victim, obj/projectile/proj)
 	if(isxeno(victim))
 		var/mob/living/carbon/xenomorph/X = victim
 		X.use_plasma(drain_multiplier * X.xeno_caste.plasma_max * X.xeno_caste.plasma_regen_limit)
-		X.use_plasma(plasma_drain)
+		//X.use_plasma(plasma_drain)
+		if(X.plasma_stored <= 1)
+			X.Paralyze(15 SECONDS)//can now be used to riot control xenos when they abuse the hospitality of NTC
+
+
 
 /datum/ammo/bullet/pepperball/pepperball_mini
-	damage = 40
-	drain_multiplier = 0.03
-	plasma_drain = 15
+	damage = 15
+	drain_multiplier = 0.015
+	//plasma_drain = 15
 
 /datum/ammo/alloy_spike
 	name = "alloy spike"

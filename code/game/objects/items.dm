@@ -1011,7 +1011,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 		return
 
 	user.visible_message(span_danger("[user] sprays water from [src]!"), \
-	span_warning("You spray water from [src]."),)
+	span_warning("You spray water from [src]."))
 
 	playsound(user.loc, 'sound/effects/extinguish.ogg', 52, 1, 7)
 
@@ -1439,6 +1439,7 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 			current_variant = variant
 			update_icon()
 			update_greyscale()
+			SEND_SIGNAL(src, COMSIG_ITEM_VARIANT_CHANGE, user, variant)
 			return
 		if(PRESET_COLORS)
 			var/color_selection

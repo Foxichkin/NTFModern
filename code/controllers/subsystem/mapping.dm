@@ -195,6 +195,10 @@ SUBSYSTEM_DEF(mapping)
 	INIT_ANNOUNCE("Loading [ship_map.map_name]...")
 	LoadGroup(FailedZs, ship_map.map_name, ship_map.map_path, ship_map.map_file, ship_map.traits, ZTRAITS_MAIN_SHIP)
 
+	var/datum/map_config/antag_map = configs[ANTAG_MAP]
+	INIT_ANNOUNCE("Loading [antag_map.map_name]...")
+	LoadGroup(FailedZs, antag_map.map_name, antag_map.map_path, antag_map.map_file, antag_map.traits, ZTRAITS_ANTAG_SHIP)
+
 	if(SSdbcore.Connect())
 		var/datum/db_query/query_round_map_name = SSdbcore.NewQuery({"
 			UPDATE [format_table_name("round")] SET map_name = :map_name WHERE id = :round_id

@@ -20,6 +20,13 @@ tools/Runtime Condenser/Input.txt
 tools/Runtime Condenser/Output.txt
 tools/MapDaemon/logs/*.txt
 
+#Ignore everything in datafolder and subdirectories
+/data/**/*
+/tmp/**/*
+
+#Ignore byond config folder.
+/cfg/**/*
+
 #Visual studio stuff
 *.vscode/*
 !/.vscode/extensions.json
@@ -46,3 +53,5 @@ dmdoc/*
 tools/UnstandardnessTestForDM/UnstandardnessTestForDM/obj/x86/Debug/.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs
 
 tools/hyperscale_converter/output/*
+icons/misc/title.png
+config/dbconfig.txt

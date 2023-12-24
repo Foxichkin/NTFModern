@@ -140,7 +140,7 @@
 
 /obj/item/weapon/gun/energy/lasgun/M43
 	name = "\improper M43 Sunfury Lasgun MK1"
-	desc = "An accurate, recoilless laser based battle rifle with an integrated charge selector. Ideal for longer range engagements. It was the standard lasrifle for TGMC soldiers until it was replaced by the LR-73, due to its extremely modular lens system."
+	desc = "An accurate, recoilless laser based battle rifle with an integrated charge selector. Ideal for longer range engagements. It was the standard lasrifle for NTC soldiers until it was replaced by the LR-73, due to its extremely modular lens system."
 	force = 20 //Large and hefty! Includes stock bonus.
 	icon_state = "m43"
 	item_state = "m43"
@@ -189,7 +189,7 @@
 
 /obj/item/weapon/gun/energy/lasgun/pulse
 	name = "\improper M19C4 pulse energy rifle"
-	desc = "A heavy-duty, multifaceted energy weapon that uses pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists and front-line combat personnel. This is a testing model issued only for Asset Protection units and offshore elite Nanotrasen squads."
+	desc = "A heavy-duty, multifaceted energy weapon that uses pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists and front-line combat personnel. This is a testing model issued only for Asset Protection units and offshore elite Ninetails squads."
 	force = 23 //Slightly more heftier than the M43, but without the stock.
 	icon_state = "m19c4"
 	item_state = "m19c4"
@@ -541,6 +541,7 @@
 	item_state = GUN_ICONSTATE_LOADED
 	w_class = WEIGHT_CLASS_NORMAL
 	flags_equip_slot = ITEM_SLOT_BELT
+	gun_skill_category = SKILL_PISTOLS
 	max_shots = 30 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/pistol
 	ammo_level_icon = null
@@ -869,6 +870,7 @@
 	icon_state = GUN_ICONSTATE_LOADED
 	item_state = GUN_ICONSTATE_LOADED
 	w_class = WEIGHT_CLASS_BULKY
+	gun_skill_category = SKILL_HEAVY_WEAPONS
 	max_shots = 150 //codex stuff
 	ammo_datum_type = /datum/ammo/energy/lasgun/marine/autolaser
 	rounds_per_shot = 4
@@ -1108,6 +1110,7 @@
 	icon_state = "vx12"
 	item_state = "vx12"
 	w_class = WEIGHT_CLASS_NORMAL
+	gun_skill_category = SKILL_PISTOLS
 	max_shots = 15
 	rounds_per_shot = 36
 	ammo_datum_type = /datum/ammo/energy/volkite/medium
@@ -1241,6 +1244,7 @@
 		slot_r_hand_str = 'icons/mob/items_righthand_64.dmi',
 	)
 	ammo_level_icon = null
+	gun_skill_category = SKILL_HEAVY_WEAPONS
 	max_shots = 120
 	ammo_datum_type = /datum/ammo/energy/volkite/heavy
 	rounds_per_shot = 30

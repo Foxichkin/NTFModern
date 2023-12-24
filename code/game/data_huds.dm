@@ -88,7 +88,7 @@
 
 //med hud used by medical hud glasses
 /datum/atom_hud/medical/advanced
-
+	hud_icons = list(HEALTH_HUD, STATUS_HUD, HEALTH_HUD_XENO)
 
 //HUD used by the synth, separate typepath so it's not accidentally removed.
 /datum/atom_hud/medical/advanced/synthetic
@@ -395,7 +395,6 @@
 		holder.icon_state = "hudhealth-50"
 
 	return TRUE
-
 
 //infection status that appears on humans and monkeys, viewed by xenos only.
 /datum/atom_hud/xeno_infection

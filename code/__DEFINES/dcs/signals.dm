@@ -72,8 +72,8 @@
 ///called when an AI is requested by a holopad
 #define COMSIG_GLOB_HOLOPAD_AI_CALLED "!holopad_calling"
 
-///Opens the TGMC shipside shutters on campaign
-#define COMSIG_GLOB_OPEN_CAMPAIGN_SHUTTERS_TGMC "!open_campaign_shutters_tgmc"
+///Opens the NTC shipside shutters on campaign
+#define COMSIG_GLOB_OPEN_CAMPAIGN_SHUTTERS_NTC "!open_campaign_shutters_tgmc"
 ///Opens the SOM shipside shutters on campaign
 #define COMSIG_GLOB_OPEN_CAMPAIGN_SHUTTERS_SOM "!open_campaign_shutters_som"
 ///Sent when a new campaign mission is loaded
@@ -376,6 +376,8 @@
 #define COMSIG_ITEM_SECONDARY_COLOR "item_secondary_color" //from base of /obj/item/proc/alternate_color_item() : (mob/user, list/obj/item)
 
 #define COMSIG_ITEM_HYDRO_CANNON_TOGGLED "hydro_cannon_toggled"
+
+#define COMSIG_ITEM_VARIANT_CHANGE "item_variant_change"			// called in color_item : (mob/user, variant)
 
 #define COMSIG_NEW_REAGENT_ADD "new_reagent_add"					//from add_reagent(): (reagent_path, amount); it is sent when a reagent gets added for the first time to a holder
 #define COMSIG_REAGENT_DELETING "reagent_deleting"					//from /datum/reagents/del_reagent(): (reagent_path) When a reagent is entirely removed from its holder
@@ -938,6 +940,15 @@
 #define COMSIG_XENOABILITY_SEISMIC_FRACTURE "xenoability_seismic_fracture"
 #define COMSIG_XENOABILITY_PRIMAL_WRATH "xenoability_primal_wrath"
 
+//sectoid abilities
+#define COMSIG_ABILITY_MINDMELD "ability_mindmeld"
+#define COMSIG_ABILITY_MINDFRAY "ability_mindfray"
+#define COMSIG_ABILITY_REKNIT_FORM "ability_reknit_form"
+#define COMSIG_ABILITY_FUSE "ability_fuse"
+#define COMSIG_ABILITY_STASIS "ability_stasis"
+#define COMSIG_ABILITY_TELEKINESIS "ability_telekinesis"
+#define COMSIG_ABILITY_REANIMATE "ability_reanimate"
+
 // throw parry signals
 #define COMSIG_THROW_PARRY_CHECK "throw_parry_check"
 #define COMSIG_PARRY_TRIGGER "parry_trigger"
@@ -1061,3 +1072,4 @@
 #define COMSIG_PUPPET_CHANGE_ORDER "puppetchangeorder"
 #define COMSIG_PUPPET_CHANGE_ALL_ORDER "puppetglobalorder"
 
+#define COMSIG_CAVE_INTERFERENCE_CHECK "cave_interference_check" //! Cave comms interference check signal.

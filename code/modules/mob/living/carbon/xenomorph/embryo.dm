@@ -16,6 +16,8 @@
 	var/boost_timer = 0
 	var/hivenumber = XENO_HIVE_NORMAL
 	var/admin = FALSE
+	var/emerge_target = 1
+	var/emerge_target_flavor = "throat"
 
 
 /obj/item/alien_embryo/Initialize(mapload)
@@ -70,7 +72,7 @@
 		counter += 2.5 //Free burst time in ~7/8 min.
 
 	if(affected_mob.reagents.get_reagent_amount(/datum/reagent/consumable/larvajelly))
-		counter += 10 //Accelerates larval growth massively. Voluntarily drinking larval jelly while infected is straight-up suicide. Larva hits Stage 5 in exactly ONE minute.
+		counter += 5 //Accelerates larval growth massively. Voluntarily drinking larval jelly while infected is straight-up suicide. Larva hits Stage 5 in exactly ONE minute.
 
 	if(affected_mob.reagents.get_reagent_amount(/datum/reagent/medicine/larvaway))
 		counter -= 1 //Halves larval growth progress, for some tradeoffs. Larval toxin purges this
@@ -151,13 +153,25 @@
 
 	victim.chestburst = 1
 	to_chat(src, span_danger("We start slithering out of [victim]!"))
+	var/obj/item/alien_embryo/birth_owner = locate() in victim
+	switch(birth_owner.emerge_target)
+		if("1")
+			playsound(victim, 'modular_skyrat/sound/weapons/gagging.ogg', 25, TRUE)
+			birth_owner.emerge_target_flavor = "throat"
+		if("2")
+			victim.emote_burstscream()
+			if(victim.gender==FEMALE)
+				birth_owner.emerge_target_flavor ="pussy"
+			else
+				birth_owner.emerge_target_flavor = "ass"
+		if("3")
+			victim.emote_burstscream()
+			birth_owner.emerge_target_flavor = "ass"
 
 	victim.Unconscious(10 SECONDS)
-	victim.visible_message(span_danger("\The [victim] starts shaking uncontrollably!"), \
-								span_danger("You feel something wiggling out of your insides!"))
+	victim.visible_message("<span class='danger'>\The [victim] starts shaking uncontrollably!</span>", \
+								"<span class='danger'>You feel something wiggling in your [birth_owner.emerge_target_flavor]!</span>")
 	victim.jitter(150)
-
-	victim.emote_burstscream()
 
 	addtimer(CALLBACK(src, PROC_REF(burst), victim), 3 SECONDS)
 
@@ -176,10 +190,11 @@
 		V.handle_player_exit(src)
 	else
 		forceMove(get_turf(victim)) //moved to the turf directly so we don't get stuck inside a cryopod or another mob container.
+	var/obj/item/alien_embryo/AE = locate() in victim
 	playsound(src, pick('sound/voice/alien_chestburst.ogg','sound/voice/alien_chestburst2.ogg'), 25)
+	victim.visible_message("<span class='danger'>The Larva forces its way out of [victim]'s [AE.emerge_target_flavor]!</span>")
 	GLOB.round_statistics.total_larva_burst++
 	SSblackbox.record_feedback("tally", "round_statistics", 1, "total_larva_burst")
-	var/obj/item/alien_embryo/AE = locate() in victim
 
 	if(AE)
 		qdel(AE)
@@ -189,7 +204,9 @@
 	log_combat(src, null, "was born as a larva.")
 	log_game("[key_name(src)] was born as a larva at [AREACOORD(src)].")
 	victim.chestburst = 0
-
+	if(ismonkey(victim))
+		victim.apply_damage(25, BRUTE, BODY_ZONE_HEAD, updating_health = TRUE)
+		victim.adjustCloneLoss(25)
 	if((((locate(/obj/structure/bed/nest) in loc) || loc_weeds_type) && hive.living_xeno_ruler?.z == loc.z) && !mind)
 		addtimer(CALLBACK(src, PROC_REF(burrow)), 4 SECONDS)
 

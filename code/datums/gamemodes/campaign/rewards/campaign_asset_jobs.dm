@@ -601,7 +601,7 @@ What you lack in equipment and military training you make up in bravery and conv
 /datum/outfit/job/icc/leader/icc_confrontationrifle/campaign
 	ears = /obj/item/radio/headset/mainship/som
 
-//TGMC combat robots
+//NTC combat robots
 /datum/job/terragov/squad/standard/campaign_robot
 	title = SQUAD_ROBOT
 	outfit = /datum/outfit/job/tgmc/campaign_robot
@@ -616,9 +616,9 @@ What you lack in equipment and military training you make up in bravery and conv
 
 /datum/job/terragov/squad/standard/campaign_robot/radio_help_message(mob/M)
 	. = ..()
-	to_chat(M, {"\nYou are a cold, unfeeling machine built for war, controlled by TGMC.
+	to_chat(M, {"\nYou are a cold, unfeeling machine built for war, controlled by NTC.
 Your metal body is immune to pain and chemical warfare, and resistant against fire and radiation, although you lack the mobility of your human counterparts.
-Fight for TGMC, and attempt to achieve all objectives given to you."})
+Fight for NTC, and attempt to achieve all objectives given to you."})
 
 /datum/outfit/job/tgmc/campaign_robot
 	name = "Combat robot"
@@ -652,7 +652,6 @@ Fight for TGMC, and attempt to achieve all objectives given to you."})
 	H.equip_to_slot_or_del(new /obj/item/explosive/plastique, SLOT_IN_HEAD)
 
 /datum/outfit/job/tgmc/campaign_robot/machine_gunner
-	r_store = /obj/item/storage/pouch/pistol
 	belt = /obj/item/storage/belt/sparepouch
 	suit_store = /obj/item/weapon/gun/rifle/standard_gpmg/machinegunner
 
@@ -674,12 +673,10 @@ Fight for TGMC, and attempt to achieve all objectives given to you."})
 	H.equip_to_slot_or_del(new /obj/item/stack/cable_coil, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/standard_gpmg, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/standard_gpmg, SLOT_IN_BACKPACK)
-	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/standard_gpmg, SLOT_IN_BACKPACK)
+	H.equip_to_slot_or_del(new /obj/item/weapon/shield/riot/marine/deployable, SLOT_IN_BACKPACK)
 	H.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/vp70, SLOT_IN_BACKPACK)
 
 /datum/outfit/job/tgmc/campaign_robot/guardian
-	r_store = /obj/item/storage/pouch/pistol
-	belt = /obj/item/storage/belt/marine/te_cells
 	suit_store = /obj/item/weapon/gun/energy/lasgun/lasrifle/standard_marine_carbine/gyro
 	r_hand = /obj/item/weapon/shield/riot/marine
 
@@ -703,7 +700,6 @@ Fight for TGMC, and attempt to achieve all objectives given to you."})
 /datum/outfit/job/tgmc/campaign_robot/jetpack
 	wear_suit = /obj/item/clothing/suit/modular/robot/heavy/shield
 	r_store = /obj/item/storage/pouch/magazine/large
-	belt = /obj/item/storage/belt/marine/te_cells
 	suit_store = /obj/item/weapon/gun/energy/lasgun/lasrifle/standard_marine_carbine/mag_harness
 	back = /obj/item/jetpack_marine
 
@@ -720,8 +716,6 @@ Fight for TGMC, and attempt to achieve all objectives given to you."})
 	H.equip_to_slot_or_del(new /obj/item/cell/lasgun/lasrifle, SLOT_IN_R_POUCH)
 
 /datum/outfit/job/tgmc/campaign_robot/laser_mg
-	r_store = /obj/item/storage/pouch/pistol
-	belt = /obj/item/storage/belt/marine/te_cells
 	suit_store = /obj/item/weapon/gun/energy/lasgun/lasrifle/standard_marine_mlaser/patrol
 
 /datum/outfit/job/tgmc/campaign_robot/laser_mg/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

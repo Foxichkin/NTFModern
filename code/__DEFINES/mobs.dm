@@ -476,7 +476,7 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 
 #define PLASMA_TRANSFER_AMOUNT 100
 
-#define XENO_LARVAL_AMOUNT_RECURRING 10
+#define XENO_LARVAL_AMOUNT_RECURRING 5
 #define XENO_LARVAL_CHANNEL_TIME 0.5 SECONDS
 
 #define XENO_NEURO_AMOUNT_RECURRING 5
@@ -518,6 +518,7 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 #define CASTE_NOT_IN_BIOSCAN (1<<13) // xenos with this flag aren't registered towards bioscan
 #define CASTE_DO_NOT_ANNOUNCE_DEATH (1<<14) // xenos with this flag wont be announced to hive when dying
 #define CASTE_STAGGER_RESISTANT (1<<15) //Resistant to some forms of stagger, such as projectiles
+#define CASTE_HAS_WOUND_MASK (1<<16) //uses an alpha mask for wounded states
 
 // Xeno defines that affect evolution, considering making a new var for these
 #define CASTE_LEADER_TYPE (1<<16) //Whether we are a leader type caste, such as the queen, shrike or ?king?, and is affected by queen ban and playtime restrictions
@@ -752,7 +753,6 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 
 
 #define BODY_ZONE_HEAD "head"
-#define BODY_ZONE_GROIN "groin"
 #define BODY_ZONE_CHEST "chest"
 #define BODY_ZONE_L_ARM "l_arm"
 #define BODY_ZONE_R_ARM "r_arm"
@@ -813,6 +813,7 @@ GLOBAL_LIST_INIT(human_body_parts, list(BODY_ZONE_HEAD,
 #define IGNORE_USER_LOC_CHANGE (1<<0)
 #define IGNORE_TARGET_LOC_CHANGE (1<<1)
 #define IGNORE_HAND (1<<2)
+#define IGNORE_HELD_ITEM (1<<3)
 
 #define TIER_ONE_THRESHOLD 420
 

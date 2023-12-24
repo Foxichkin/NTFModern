@@ -47,7 +47,7 @@
 	/// How fast does a mob regen its stamina. Shouldn't go below 0.
 	var/stamina_regen_multiplier = 1
 	/// Maps modifiers by name to a value, applied additively to stamina_regen_multiplier
-	var/list/stamina_regen_modifiers
+	var/list/stamina_regen_modifiers = list()
 	var/is_dizzy = FALSE
 	var/druggy = 0
 
@@ -59,6 +59,14 @@
 	var/dizziness = 0
 	var/jitteriness = 0
 	///Directly affects how long a mob will hallucinate for
+
+	/// % Chance of exploding on death, incremented by total damage taken if not initially zero.
+	var/gib_chance = 0
+	///list of abilities this mob has access to
+	var/list/datum/action/ability/mob_abilities = list()
+	///Currently selected ability
+	var/datum/action/ability/activable/selected_ability
+
 	var/hallucination = 0
 	var/disabilities = NONE
 

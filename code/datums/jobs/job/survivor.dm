@@ -6,7 +6,6 @@
 	display_order = JOB_DISPLAY_ORDER_SURVIVOR
 	total_positions = -1
 	skills_type = /datum/skills/civilian/survivor
-	faction = FACTION_TERRAGOV
 
 /datum/job/survivor/after_spawn(mob/living/carbon/C, mob/M, latejoin = FALSE)
 	. = ..()
@@ -55,7 +54,7 @@
 	. = ..()
 	to_chat(M, {"In whatever case you have been through, you are here to survive and get yourself rescued.
 You appreciate the support of TerraGov and Nanotrasen should you be rescued.
-You are not hostile to TGMC, nor you should oppose or disrupt their objective, unless an admin says otherwise.
+You are not hostile to NTC, nor you should oppose or disrupt their objective, unless an admin says otherwise.
 If you find any other survivors in the area, cooperate with them to increase your chances of survival.
 Depending on the job you've undertook, you may have additional skills to help others when needed.
 Good luck, but do not expect to survive."})

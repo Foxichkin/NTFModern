@@ -212,8 +212,9 @@
 	description = "An effective hypnotic used to treat insomnia."
 	color = COLOR_TOXIN_SLEEPTOXIN
 	toxpwr = 0
-	overdose_threshold = REAGENTS_OVERDOSE
-	overdose_crit_threshold = REAGENTS_OVERDOSE_CRITICAL
+	custom_metabolism = REAGENTS_METABOLISM
+	overdose_threshold = REAGENTS_OVERDOSE*2
+	overdose_crit_threshold = REAGENTS_OVERDOSE_CRITICAL*2
 	scannable = TRUE
 	taste_description = "cough syrup"
 	trait_flags = BRADYCARDICS
@@ -229,7 +230,7 @@
 				L.Sleeping(10 SECONDS)
 			L.drowsyness = max(L.drowsyness, 20)
 		if(11 to 80)
-			L.Sleeping(10 SECONDS) //previously knockdown, no good for a soporific.
+			L.Sleeping(20 SECONDS) //previously knockdown, no good for a soporific.
 			L.drowsyness = max(L.drowsyness, 30)
 		if(81 to INFINITY)
 			L.adjustDrowsyness(2)
@@ -293,7 +294,7 @@
 	name = "Potassium Chlorophoride"
 	description = "A specific chemical based on Potassium Chloride to stop the heart for surgery. Not safe to eat!"
 	color = COLOR_TOXIN_POTASSIUM_CHLORIDE
-	toxpwr = 2
+	toxpwr = 1
 
 /datum/reagent/toxin/potassium_chlorophoride/on_mob_life(mob/living/L, metabolism)
 	if(L.stat != UNCONSCIOUS)

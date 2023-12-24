@@ -119,16 +119,53 @@
 	)
 
 /obj/item/clothing/suit/modular/xenonauten/pilot
-	name = "\improper TerraGov standard flak jacket"
+	name = "\improper NTC standard flak jacket"
 	desc = "A flak jacket used by dropship pilots to protect themselves while flying in the cockpit. Excels in protecting the wearer against high-velocity solid projectiles."
 	flags_item = NONE
-	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 50, ENERGY = 25, BOMB = 30, BIO = 5, FIRE = 25, ACID = 30)
-	slowdown = 0.25
+	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 50, ENERGY = 40, BOMB = 30, BIO = 5, FIRE = 25, ACID = 30)
+	slowdown = 0
 
 	greyscale_config = /datum/greyscale_config/xenonaut/pilot
 
 	attachments_allowed = list()
 
+
+	allowed = list(
+		/obj/item/weapon/gun,
+		/obj/item/tank/emergency_oxygen,
+		/obj/item/flashlight,
+		/obj/item/ammo_magazine,
+		/obj/item/storage/fancy/cigarettes,
+		/obj/item/tool/lighter,
+		/obj/item/weapon/baton,
+		/obj/item/restraints/handcuffs,
+		/obj/item/explosive/grenade,
+		/obj/item/binoculars,
+		/obj/item/weapon/combat_knife,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/storage/belt/sparepouch,
+		/obj/item/storage/holster/blade,
+		/obj/item/storage/holster/belt,
+		/obj/item/weapon/energy/sword,
+	)
+
+/obj/item/clothing/suit/modular/xenonauten/bulletresistant
+	name = "\improper NTC bullet-resistant vest"
+	desc = "A set of armor that excels in protecting the wearer against high-velocity solid projectiles. This one has bullet resistant padding on the limbs aswell."
+	blood_overlay_type = "armor"
+	soft_armor = list(MELEE = 35, BULLET = 55, LASER = 35, ENERGY = 30, BOMB = 45, BIO = 45, FIRE = 45, ACID = 45)
+	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
+	slowdown = 0
+
+	greyscale_config = /datum/greyscale_config/xenonaut/bulletproof
+
+	allowed = list(
+		/obj/item/weapon/gun/,
+		/obj/item/flashlight,
+		/obj/item/storage/holster/blade,
+		/obj/item/storage/holster/belt/pistol/m4a3,
+		/obj/item/storage/holster/belt/m44,
+	)
 
 	allowed = list(
 		/obj/item/weapon/gun,

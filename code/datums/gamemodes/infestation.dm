@@ -124,10 +124,10 @@
 				to_chat(usr, span_warning("Signal analysis reveals excellent detail about hostile movements and numbers."))
 				return
 			if(3)
-				to_chat(usr, span_warning("Minor corruption detected in our bioscan instruments, some information about hostile activity may be incorrect."))
+				to_chat(usr, span_warning("Minor corruption detected in our bioscan instruments due to ship elevation, some information about hostile activity may be incorrect."))
 				return
 			if(5)
-				to_chat(usr, span_warning("Major corruption detected in our bioscan readings, information heavily corrupted."))
+				to_chat(usr, span_warning("Major corruption detected in our bioscan readings due to ship elevation, information heavily corrupted."))
 		return
 
 	if(announce_humans)
@@ -277,8 +277,8 @@
 				xeno_candidate = TRUE
 				break
 	if(!xeno_candidate && !bypass_checks)
-		to_chat(world, "<b>Unable to start [name].</b> No xeno candidate found.")
-		return FALSE
+		to_chat(world, "WARNING: No xeno candidate found.")
+		return TRUE
 
 /datum/game_mode/infestation/pre_setup()
 	. = ..()

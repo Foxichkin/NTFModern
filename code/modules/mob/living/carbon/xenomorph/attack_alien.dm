@@ -41,8 +41,9 @@
 	var/damage_to_deal = clamp(disarmdamage, 0, maxHealth - stamina_loss)
 	var/sound = 'sound/weapons/alien_knockdown.ogg'
 
-	if ishumanbasic(src)
+	if ishuman(src)
 		if(IsParalyzed())
+			X.do_attack_animation(src, ATTACK_EFFECT_DISARM2)
 			X.visible_message(null, "<span class='info'>We could not do much to [src], they are already down.</span>", null)
 			sound = 'sound/weapons/punchmiss.ogg'
 		else
@@ -52,7 +53,7 @@
 				"<span class='danger'>We break [src]'s grip on [pulling]!</span>", null, 5)
 				sound = 'sound/weapons/thudswoosh.ogg'
 				stop_pulling()
-			else if(prob(60) && drop_held_item())
+			else if(prob(25) && drop_held_item())
 				X.visible_message("<span class='danger'>[X] has disarmed [src]!</span>",
 				"<span class='danger'>We disarm [src]!</span>", null, 5)
 				sound = 'sound/weapons/thudswoosh.ogg'
@@ -67,9 +68,9 @@
 					visible_message(null, "<span class='danger'>You are too weakened to keep resisting [X], you slump to the ground!</span>")
 					X.visible_message("<span class='danger'>[X] slams [src] to the ground!</span>",
 					"<span class='danger'>We slam [src] to the ground!</span>", null, 5)
-					Paralyze(15 SECONDS)
-	else if(!ishumanbasic(src))
-		if(randn <= 60)
+					Paralyze(20 SECONDS)
+	else if(!ishuman(src))
+		if(randn <= 40)
 			if(!IsParalyzed())
 				X.do_attack_animation(src, ATTACK_EFFECT_DISARM2)
 				X.visible_message("<span class='danger'>[X] shoves and presses [src] down!</span>",
@@ -77,14 +78,17 @@
 				visible_message(null, "<span class='danger'>You are too weakened to keep resisting [X], you slump to the ground!</span>")
 				X.visible_message("<span class='danger'>[X] slams [src] to the ground!</span>",
 				"<span class='danger'>We slam [src] to the ground!</span>", null, 5)
-				Paralyze(10 SECONDS)
+				Paralyze(8 SECONDS)
 			else if(IsParalyzed())
+				X.do_attack_animation(src, ATTACK_EFFECT_DISARM2)
 				X.visible_message(null, "<span class='info'>We could not do much to [src], they are already down.</span>", null)
 				sound = 'sound/weapons/punchmiss.ogg'
-		else if(randn > 20)
+		else if(randn > 40)
+			X.do_attack_animation(src, ATTACK_EFFECT_DISARM2)
 			sound = 'sound/weapons/punchmiss.ogg'
-			X.visible_message("<span class='danger'>[X] attempted to disarm [src]!</span>",
-			"<span class='danger'>We attempt to disarm [src]!</span>", null, 5)
+			X.visible_message("<span class='danger'>[X] attempted to disarm [src] but they resist!</span>",
+			"<span class='danger'>We attempt to disarm [src] but it resisted!</span>", null, 5)
+			Stagger(2 SECONDS)
 
 
 	log_combat(X, src, "disarmed")

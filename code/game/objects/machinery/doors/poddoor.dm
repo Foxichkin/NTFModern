@@ -104,7 +104,6 @@
 	icon = 'icons/obj/doors/1x2blast_hor.dmi'
 	dir = EAST
 	width = 2
-	resistance_flags = UNACIDABLE
 
 /obj/machinery/door/poddoor/two_tile_hor/execution
 	icon_state = "pdoor0"
@@ -135,7 +134,6 @@
 	icon = 'icons/obj/doors/1x2blast_vert.dmi'
 	dir = NORTH
 	width = 2
-	resistance_flags = UNACIDABLE
 
 /obj/machinery/door/poddoor/two_tile_ver/riotarmory
 	icon_state = "pdoor0"
@@ -288,7 +286,7 @@
 
 ///Faction signals for campaign mode doors
 GLOBAL_LIST_INIT(faction_to_campaign_door_signal, list(
-	FACTION_TERRAGOV = COMSIG_GLOB_OPEN_CAMPAIGN_SHUTTERS_TGMC,
+	FACTION_TERRAGOV = COMSIG_GLOB_OPEN_CAMPAIGN_SHUTTERS_NTC,
 	FACTION_SOM = COMSIG_GLOB_OPEN_CAMPAIGN_SHUTTERS_SOM,
 ))
 

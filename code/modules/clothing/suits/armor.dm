@@ -73,7 +73,7 @@
 	icon_state = "bulletproof"
 	item_state = "bulletproof"
 	blood_overlay_type = "armor"
-	flags_armor_protection = CHEST
+	flags_armor_protection = CHEST|GROIN
 	soft_armor = list(MELEE = 30, BULLET = 55, LASER = 0, ENERGY = 0, BOMB = 30, BIO = 0, FIRE = 0, ACID = 15)
 	hard_armor = list(MELEE = 0, BULLET = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 5)
 	siemens_coefficient = 0.7
@@ -93,7 +93,7 @@
 	desc = "A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement."
 	icon_state = "riot"
 	item_state = "swat"
-	flags_armor_protection = CHEST|GROIN|LEGS|ARMS
+	flags_armor_protection = CHEST|GROIN|FEET|LEGS|ARMS
 	slowdown = 1.2
 	soft_armor = list(MELEE = 65, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 0, FIRE = 10, ACID = 10)
 	flags_inventory = BLOCKSHARPOBJ

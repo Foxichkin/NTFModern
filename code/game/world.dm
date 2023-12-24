@@ -348,7 +348,7 @@ GLOBAL_VAR(restart_counter)
 	// Note: Hub content is limited to 254 characters, including HTML/CSS. Image width is limited to 450 pixels.
 	// Current outputt should look like
 	/*
-	Something — Lost in space...	|	TerraGov Marine Corps — Sulaco
+	Something — Lost in space...	|	Nine Tailed Fox — Sulaco
 	Map: Loading...					|	Map: Icy Caves
 	Mode: Lobby						|	Mode: Crash
 	Round time: 0:0					|	Round time: 4:54
@@ -419,14 +419,14 @@ GLOBAL_VAR(restart_counter)
 			library = "libprof.so"
 		else
 			CRASH("Unsupported platform: [system_type]")
-	var/init_result = LIBCALL(library, "init")("block")
+	var/init_result = call_ext(library, "init")("block")
 	if (init_result != "0")
 		CRASH("Error initializing byond-tracy: [init_result]")
 
 /world/proc/init_debugger()
 	var/dll = GetConfig("env", "AUXTOOLS_DEBUG_DLL")
 	if (dll)
-		LIBCALL(dll, "auxtools_init")()
+		call_ext(dll, "auxtools_init")()
 		enable_debugging()
 
 #undef MAX_TOPIC_LEN
