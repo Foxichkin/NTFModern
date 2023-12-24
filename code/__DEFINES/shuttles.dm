@@ -113,4 +113,10 @@
 #define SHUTTLE_DISTRESS "distress"
 #define SHUTTLE_ESCAPE_POD "escape_pod"
 #define SHUTTLE_SUPPLY "supply"
+<<<<<<< Updated upstream
+=======
+#define SHUTTLE_SHIPELEVATOR "shipelevator"
+#define SHUTTLE_ELEVATOR "elevator"
+#define SHUTTLE_SOMTADPOLE
+>>>>>>> Stashed changes
 

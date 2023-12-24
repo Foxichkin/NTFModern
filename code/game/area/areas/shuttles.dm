@@ -44,6 +44,9 @@
 /area/shuttle/minidropship
 	name = "Tadpole Drop Shuttle"
 
+/area/shuttle/som_calico
+	name = "Calico"
+
 /area/shuttle/minidropship/Initialize(mapload, ...)
 	. = ..()
 	var/area/area = get_area(src)

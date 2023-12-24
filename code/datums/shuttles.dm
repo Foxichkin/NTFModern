@@ -113,6 +113,19 @@
 	shuttle_id = SHUTTLE_NORMANDY
 	name = "Normandy"
 
+<<<<<<< Updated upstream
+=======
+/datum/map_template/shuttle/shipelevator
+	shuttle_id = SHUTTLE_SHIPELEVATOR
+	name = "Elevator"
+
+/datum/map_template/shuttle/som_calico
+	shuttle_id = SHUTTLE_SOMTADPOLE
+	name = "Calico"
+	suffix = "_small"
+	description = "SOM issued battle dropship named Calico, small, but effective."
+
+>>>>>>> Stashed changes
 /datum/map_template/shuttle/cas
 	shuttle_id = SHUTTLE_CAS
 	name = "Condor Jet"

@@ -351,7 +351,7 @@
 	ceiling = CEILING_METAL
 
 /area/canora_desert/surface/outside/desert
-	name = "canora_desert"
+	name = "Canora Desert"
 	icon_state = "transparent"
 	ambience = list('sound/ambience/ambiwind.ogg', 'sound/ambience/ambiatmos2.ogg')
 	ceiling = CEILING_NONE
@@ -548,7 +548,10 @@
 	ceiling = CEILING_METAL
 	minimap_color = MINIMAP_AREA_REQ
 
+<<<<<<< Updated upstream
 	/area/canora_desert/surface/building/som_spider
 	name = "Aviary"
 	icon_state = "green"
 	ceiling = CEILING_METAL
+=======
+>>>>>>> Stashed changes
