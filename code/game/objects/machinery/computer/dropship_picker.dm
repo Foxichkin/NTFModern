@@ -89,7 +89,4 @@
 			balloon_alert(usr, "shuttle selected, locking")
 			ui.close()
 	return TRUE
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes

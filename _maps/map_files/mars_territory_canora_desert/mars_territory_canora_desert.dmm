@@ -1,15 +1,14 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ab" = (
-/obj/machinery/door/poddoor/shutters/mainship{
-	name = "Privacy shutters";
-	id = "SOMAdmiral2"
-	},
-/obj/machinery/door/airlock/hatch/engineering{
-	name = "Torture Chamber";
-	req_access = list(209)
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
+	},
+/obj/machinery/door/airlock/hatch/engineering{
+	req_access = list(209);
+	name = "Admiral"
+	},
+/obj/machinery/door/poddoor/shutters/mainship/open/hangar{
+	id = "SOMAdmiral2"
 	},
 /turf/open/floor/mainship/mono,
 /area/canora_desert/surface/building/som_admiral)
@@ -206,6 +205,10 @@
 /area/canora_desert/surface/building/som_smaint)
 "aO" = (
 /obj/effect/decal/remains/xeno,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
@@ -219,11 +222,15 @@
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
 "aQ" = (
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "stickyweb2"
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
 /turf/open/floor/plating/ground/dirt,
-/area/canora_desert/surface/building/command)
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "aR" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hos,
@@ -257,6 +264,19 @@
 "aV" = (
 /turf/closed/wall/r_wall,
 /area/canora_desert/surface/building/som_armory)
+"aX" = (
+/obj/structure/flora/drought/tall_cactus{
+	pixel_y = -17
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "aY" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -285,6 +305,10 @@
 /area/canora_desert/surface/building/abandoned_wooden_building)
 "be" = (
 /obj/effect/turf_decal/lvsanddecal,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/desertdam/cave/inner_cave_floor,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
@@ -329,17 +353,17 @@
 /obj/machinery/door/poddoor/shutters/mainship/cic/armory{
 	id = "som_armory"
 	},
-/obj/machinery/door/airlock/mainship/security/free_access,
 /obj/effect/turf_decal/delivery/red,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
 	},
+/obj/machinery/door/airlock/mainship/security/free_access{
+	req_access = list(203)
+	},
 /turf/open/floor/plating/ironsand,
 /area/canora_desert/surface/building/som_armory)
 "bq" = (
-/obj/structure/spider/stickyweb,
 /obj/structure/rock/basalt/pile/alt,
-/obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/building/command)
 "br" = (
@@ -400,7 +424,6 @@
 /turf/open/floor/mainship/orange,
 /area/canora_desert/surface/building/som_engineering)
 "bE" = (
-/obj/machinery/door/firedoor,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/mainship/orange/full,
@@ -657,9 +680,37 @@
 /obj/structure/cable,
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_mechbay_maint)
+"cC" = (
+/obj/docking_port/stationary/marine_dropship/minidropship/som,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_floortwomain)
+"cF" = (
+/obj/structure/lattice,
+/obj/structure/grille,
+/obj/effect/overlay/light_visible,
+/turf/open/space/transit/atmos,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
+"cG" = (
+/obj/structure/platform{
+	dir = 8;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/prison/redfloor,
+/area/canora_desert/surface/building/som_floortwomain)
 "cH" = (
 /turf/open/floor/mainship/mono,
 /area/canora_desert/surface/building/command)
+"cJ" = (
+/obj/structure/window/reinforced/east,
+/obj/machinery/vending/SyndiMed,
+/turf/open/floor/mainship/mono,
+/area/mainship/squads/general/som)
 "cK" = (
 /obj/structure/stairs{
 	pixel_y = 1
@@ -1017,6 +1068,9 @@
 	dir = 8
 	},
 /area/canora_desert/surface/building/som_robotics)
+"ep" = (
+/turf/closed/wall/r_wall,
+/area/canora_desert/surface/building/command)
 "eq" = (
 /turf/open/floor/mainship_hull/gray,
 /area/canora_desert/surface/building/police_station)
@@ -1236,6 +1290,14 @@
 /obj/machinery/telecomms/bus/preset_three/som,
 /turf/open/floor/bcircuit/anim,
 /area/canora_desert/surface/building/command)
+"fq" = (
+/obj/effect/turf_decal/trimline/red/filled/warning,
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/structure/platform_decoration,
+/turf/open/floor/elevatorshaft,
+/area/canora_desert/surface/building/som_floortwomain)
 "fr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable,
@@ -1263,8 +1325,10 @@
 /obj/machinery/door/poddoor/shutters/mainship/cic/armory{
 	id = "som_armory"
 	},
-/obj/machinery/door/airlock/mainship/security/free_access,
 /obj/effect/turf_decal/delivery/red,
+/obj/machinery/door/airlock/mainship/security/free_access{
+	req_access = list(203)
+	},
 /turf/open/floor/plating/ironsand,
 /area/canora_desert/surface/building/som_armory)
 "fx" = (
@@ -1344,6 +1408,29 @@
 /obj/machinery/light/small,
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_engineering)
+"fU" = (
+/obj/effect/overlay/light_visible,
+/turf/open/floor/plating/icefloor/warnplate{
+	dir = 1
+	},
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
+"fW" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt/dug,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "fY" = (
 /turf/open/floor/plating/ground/dirt/typethree{
 	dir = 1
@@ -1403,7 +1490,7 @@
 "gn" = (
 /obj/machinery/door/airlock/multi_tile/mainship/medidoor/medbay{
 	dir = 2;
-	req_access = list(206)
+	req_access = list()
 	},
 /turf/open/floor/mainship/sterile/plain,
 /area/canora_desert/surface/building/som_medical)
@@ -1554,6 +1641,19 @@
 /obj/structure/closet/secure_closet/guncabinet/canterbury,
 /turf/open/floor/tile/white,
 /area/canora_desert/surface/building/som_armory)
+"gW" = (
+/obj/effect/turf_decal/lvsanddecal{
+	dir = 1
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt2,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "gX" = (
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 9
@@ -1694,11 +1794,6 @@
 	},
 /area/canora_desert/surface/building/som_chemistry)
 "hB" = (
-/obj/machinery/door/airlock/multi_tile/mainship/personalglass{
-	dir = 2;
-	name = "Prison";
-	req_access = list(211)
-	},
 /turf/open/floor/tile/black{
 	dir = 8
 	},
@@ -1881,6 +1976,21 @@
 "ik" = (
 /turf/closed/wall/mainship/gray,
 /area/canora_desert/surface/building/som_prison)
+"il" = (
+/obj/effect/decal/cleanable/blood/xeno,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "in" = (
 /obj/structure/prop/tgbrokenvendor/colablack,
 /turf/open/floor/grayscale/edge/black{
@@ -2020,7 +2130,6 @@
 	base_lighting_alpha = 255
 	})
 "iQ" = (
-/obj/structure/spider/stickyweb,
 /obj/structure/rock/basalt/pile,
 /turf/open/floor/plating/ground/dirt/typezero,
 /area/canora_desert/surface/building/command)
@@ -2071,6 +2180,10 @@
 /turf/open/floor/grayscale/edge/black,
 /area/canora_desert/surface/building/som_sservicing)
 "ja" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/desertdam/asphalt/edge{
 	dir = 4
 	},
@@ -2089,6 +2202,10 @@
 	dir = 1
 	},
 /obj/structure/cable/layer1,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
@@ -2238,6 +2355,10 @@
 /area/canora_desert/surface/building/som_engineering)
 "jI" = (
 /obj/structure/flora/desert/grass/heavy,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/desertdam/cave/inner_cave_floor,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
@@ -2417,6 +2538,19 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/prison/redfloor,
 /area/canora_desert/surface/building/som_floortwomain)
+"kp" = (
+/obj/structure/razorwire{
+	dir = 8
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "kq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -2696,6 +2830,10 @@
 	dir = 4
 	},
 /area/canora_desert/surface/building/som_mechbay)
+"lz" = (
+/obj/effect/spawner/random/misc/structure/fire_closet,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_floortwomain)
 "lA" = (
 /obj/structure/bed/chair/sofa/right{
 	dir = 8
@@ -2750,6 +2888,17 @@
 	dir = 4
 	},
 /turf/open/floor/plating/ground/desertdam/asphalt/edge,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
+"lJ" = (
+/obj/structure/flora/desert/grass/heavy,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
 	base_lighting_alpha = 255
@@ -2884,7 +3033,9 @@
 /obj/machinery/door/poddoor/shutters/mainship/cic/armory{
 	id = "som_armory"
 	},
-/obj/machinery/door/airlock/mainship/security/free_access,
+/obj/machinery/door/airlock/mainship/security/free_access{
+	req_access = list(203)
+	},
 /obj/effect/turf_decal/delivery/red,
 /turf/open/floor/plating/ironsand,
 /area/canora_desert/surface/building/som_armory)
@@ -2969,15 +3120,13 @@
 /turf/open/floor/mainship/sterile,
 /area/canora_desert/surface/building/som_medical)
 "mJ" = (
-/obj/machinery/door/airlock/multi_tile/mainship/personalglass{
-	dir = 2;
-	name = "Prison";
-	req_access = list(211)
-	},
-/turf/open/floor/tile/black{
-	dir = 10
-	},
-/area/canora_desert/surface/building/som_prison)
+/obj/structure/lattice,
+/obj/effect/overlay/light_visible,
+/turf/open/space/transit/atmos,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "mK" = (
 /obj/structure/bed/bunkbed,
 /turf/open/floor/mainship/orange{
@@ -3000,6 +3149,21 @@
 "mO" = (
 /turf/closed/wall/mainship/gray,
 /area/canora_desert/surface/building/som_floortwomain)
+"mS" = (
+/obj/structure/prop/mainship/railing{
+	dir = 9
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/desertdam/asphalt/edge{
+	dir = 9
+	},
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "mT" = (
 /obj/structure/cable,
 /obj/effect/step_trigger/teleporter/random{
@@ -3074,11 +3238,10 @@
 /turf/open/floor/tile/white,
 /area/canora_desert/surface/building/som_armory)
 "nd" = (
-/obj/machinery/door/airlock/multi_tile/mainship/blackgeneric{
-	name = "Mech Bay";
-	req_access = list(207)
+/obj/machinery/door/airlock/multi_tile/mainship/personalglass,
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 8
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/mainship/orange{
 	dir = 1
 	},
@@ -3206,6 +3369,19 @@
 	},
 /turf/open/floor/mainship/mono,
 /area/canora_desert/surface/building/som_floortwomain)
+"nE" = (
+/obj/structure/flora/desert/grass/heavy{
+	pixel_y = -18
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "nF" = (
 /obj/structure/cable,
 /obj/machinery/light/small{
@@ -3463,6 +3639,10 @@
 /obj/structure/prop/mainship/railing{
 	dir = 10
 	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/desertdam/asphalt/edge{
 	dir = 10
 	},
@@ -3474,6 +3654,27 @@
 /turf/open/floor/plating/ground/dirt/typetwo{
 	icon_state = "desert_2"
 	},
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
+"oL" = (
+/obj/structure/platform{
+	dir = 4;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/prison/redfloor,
+/area/canora_desert/surface/building/som_floortwomain)
+"oN" = (
+/obj/structure/lattice,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
 	base_lighting_alpha = 255
@@ -3635,9 +3836,6 @@
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
 	},
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "stickyweb2"
-	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/building/command)
 "pp" = (
@@ -3758,9 +3956,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/cobweb2,
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "cobweb1"
-	},
 /turf/open/floor/plating/ground/dirt2,
 /area/canora_desert/surface/building/command)
 "pM" = (
@@ -3782,6 +3977,23 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/layer1,
 /turf/open/floor/mainship/floor,
 /area/canora_desert/surface/building/som_engineering)
+"pR" = (
+/obj/effect/step_trigger/teleporter/random{
+	affect_ghosts = 1;
+	name = "tele_ground1";
+	teleport_x = 180;
+	teleport_x_offset = 200;
+	teleport_y = 50;
+	teleport_y_offset = 80;
+	teleport_z = 1;
+	teleport_z_offset = 1
+	},
+/obj/effect/overlay/light_visible,
+/turf/open/space/transit/atmos,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "pU" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 8
@@ -3800,6 +4012,10 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/canora_desert/surface/building/som_admiral)
+"pX" = (
+/obj/effect/spawner/random/misc/structure/emcloset,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_floortwomain)
 "pY" = (
 /obj/structure/flora/desert/grass/heavy{
 	pixel_y = -18
@@ -3846,12 +4062,12 @@
 	base_lighting_alpha = 255
 	})
 "qp" = (
-/obj/machinery/door/airlock/multi_tile/mainship/medidoor/medbay{
-	dir = 1;
-	req_access = list(206)
-	},
-/turf/open/floor/mainship/sterile/plain,
-/area/canora_desert/surface/building/som_medical)
+/obj/effect/overlay/light_visible,
+/turf/open/floor/plating/icefloor,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "qq" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 8
@@ -3893,6 +4109,10 @@
 /area/canora_desert/surface/building/som_chemistry)
 "qz" = (
 /obj/structure/powerloader_wreckage,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
@@ -3980,6 +4200,17 @@
 /obj/machinery/cic_maptable/drawable/big/som,
 /turf/open/floor/mainship/red/full,
 /area/canora_desert/surface/building/command)
+"qQ" = (
+/obj/structure/razorwire,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "qS" = (
 /obj/effect/turf_decal/warning_stripes/thin{
 	icon_state = "NW-out"
@@ -4168,6 +4399,18 @@
 /obj/structure/cable,
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
+"rG" = (
+/obj/structure/lattice,
+/obj/structure/grille,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "rH" = (
 /obj/structure/razorwire{
 	dir = 1
@@ -4293,6 +4536,10 @@
 	base_lighting_alpha = 255
 	})
 "sb" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/desertdam/asphalt/edge{
 	dir = 10
 	},
@@ -4448,6 +4695,10 @@
 /obj/structure/cable,
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/general/som)
+"sI" = (
+/obj/effect/spawner/random/misc/structure/fire_closet,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_engidome)
 "sK" = (
 /obj/structure/lattice,
 /turf/open/floor/plating/ground/dirt,
@@ -4455,6 +4706,11 @@
 	static_lighting = 0;
 	base_lighting_alpha = 255
 	})
+"sM" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/door/firedoor/multi_tile,
+/turf/open/floor/mainship/black/full,
+/area/canora_desert/surface/building/som_security_hallway)
 "sO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -4478,6 +4734,17 @@
 	dir = 1
 	},
 /area/canora_desert/surface/building/som_sservicing)
+"sR" = (
+/obj/structure/flora/drought/tall_cactus,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "sS" = (
 /obj/effect/spawner/random/engineering/structure/tank/fuelweighted,
 /obj/effect/turf_decal/warning_stripes/box/empty,
@@ -4531,7 +4798,8 @@
 	},
 /obj/structure/table/fancywoodentable,
 /obj/item/computer3_part/storage/hdd{
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = -3
 	},
 /obj/machinery/computer/som{
 	pixel_y = 21;
@@ -4578,6 +4846,19 @@
 "tj" = (
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_smaint)
+"tk" = (
+/obj/effect/turf_decal/lvsanddecal/corner{
+	dir = 4
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt2,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "tm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/recharge_station,
@@ -4590,6 +4871,10 @@
 /turf/closed/wall/mainship/gray,
 /area/canora_desert/surface/building/som_engimedmaint)
 "tp" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/desertdam/asphalt/edge{
 	dir = 6
 	},
@@ -4683,12 +4968,26 @@
 	},
 /turf/open/floor/elevatorshaft,
 /area/canora_desert/surface/building/som_floortwomain)
+"tK" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 10
+	},
+/obj/structure/platform_decoration{
+	dir = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/prison/redfloor,
+/area/canora_desert/surface/building/som_floortwomain)
 "tL" = (
 /obj/structure/cable,
 /turf/open/floor/prison/darkyellow{
 	dir = 1
 	},
 /area/canora_desert/surface/building/som_prison)
+"tM" = (
+/obj/effect/spawner/random/misc/structure/emcloset,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_engidome)
 "tN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -4894,11 +5193,13 @@
 	},
 /area/canora_desert/surface/building/som_sservicing)
 "uP" = (
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "cobweb1"
+/obj/structure/barricade/wooden,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
-/turf/open/floor/plating/ground/dirt,
-/area/canora_desert/surface/building/command)
+/turf/open/floor/rustyplating,
+/area/canora_desert/surface/building/crashed)
 "uS" = (
 /obj/item/target/syndicate,
 /obj/item/target/syndicate,
@@ -4961,8 +5262,18 @@
 	dir = 1
 	},
 /area/canora_desert/surface/building/command)
+"vf" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt/typezero,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "vg" = (
-/turf/closed/wall/mainship/gray,
+/turf/closed/wall/r_wall,
 /area/canora_desert/surface/building/som_admiral)
 "vh" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -5328,6 +5639,13 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/grayscale/darkred,
 /area/canora_desert/surface/building/som_floortwomain)
+"wB" = (
+/obj/structure/table/reinforced,
+/obj/prop/mainship/prop/news_tv/som{
+	pixel_y = 32
+	},
+/turf/open/floor/mainship/mono,
+/area/canora_desert/surface/building/command)
 "wC" = (
 /obj/effect/turf_decal/sandytile,
 /obj/effect/turf_decal/sandytile,
@@ -5379,7 +5697,6 @@
 	base_lighting_alpha = 255
 	})
 "wJ" = (
-/obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/cobweb2,
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
@@ -5575,9 +5892,6 @@
 /area/mainship/squads/general/som)
 "xx" = (
 /obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "som_armory"
-	},
 /turf/open/floor/tile/white,
 /area/canora_desert/surface/building/som_security_hallway)
 "xz" = (
@@ -5825,10 +6139,8 @@
 /turf/open/floor/wood/alt_three,
 /area/canora_desert/surface/building/som_admiral)
 "yB" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/multi_tile/mainship/blackgeneric{
-	name = "Syndicate Supply Bay"
-	},
+/obj/machinery/door/airlock/multi_tile/mainship/personalglass,
+/obj/machinery/door/firedoor/multi_tile,
 /turf/open/floor/mainship/orange/full,
 /area/canora_desert/surface/building/som_robotics)
 "yC" = (
@@ -5881,6 +6193,10 @@
 /obj/structure/flora/desert/grass/heavy,
 /obj/structure/flora/desert/grass/heavy{
 	pixel_y = -18
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
@@ -6145,7 +6461,6 @@
 /area/canora_desert/surface/building/som_sservicing)
 "zX" = (
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/mainship/orange{
 	dir = 1
@@ -6218,6 +6533,24 @@
 	},
 /turf/open/floor/mainship/floor,
 /area/canora_desert/surface/building/som_robotics)
+"Am" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "An" = (
 /obj/structure/window/framed/mainship/toughened{
 	name = "kevlar-weave infused bulletproof window"
@@ -6266,11 +6599,11 @@
 /area/canora_desert/surface/building/som_engimedmaint)
 "Ay" = (
 /obj/effect/decal/cleanable/ash,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/door/airlock/mainship/maint{
 	dir = 2
 	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_engimedmaint)
 "AA" = (
@@ -6631,6 +6964,9 @@
 /area/canora_desert/surface/building/som_engimedmaint)
 "BZ" = (
 /obj/structure/rock/variable/drought,
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/building/command)
+"Cb" = (
 /mob/living/simple_animal/hostile/poison/giant_spider/hunter/viper{
 	name = "Zephirus";
 	desc = "Fuzzy, black and poisonous friend of SOM commander, purple glowing eyes, six cute legs and red marking on the back."
@@ -6640,7 +6976,7 @@
 "Cd" = (
 /obj/machinery/door/airlock/multi_tile/mainship/medidoor/medbay{
 	dir = 2;
-	req_access = list(206)
+	req_access = list()
 	},
 /obj/structure/cable,
 /turf/open/floor/mainship/sterile/plain,
@@ -6705,12 +7041,24 @@
 	},
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_mechbay)
+"Cq" = (
+/obj/effect/turf_decal/lvsanddecal,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/desertdam/asphalt/cement_sunbleached,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Cs" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/effect/turf_decal/warning_stripes/thin,
 /obj/structure/cable,
+/obj/effect/spawner/random/misc/structure/emcloset,
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
 "Ct" = (
@@ -7356,6 +7704,17 @@
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/iron/kitchen,
 /area/canora_desert/surface/building/som_kitchen)
+"FV" = (
+/obj/structure/grille,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "FX" = (
 /turf/closed/wall/desert,
 /area/canora_desert/surface/building/street_food_canora)
@@ -7397,15 +7756,15 @@
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_floortwomain)
 "Gk" = (
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "cobweb1"
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "stickyweb2"
-	},
-/obj/effect/decal/cleanable/cobweb2,
-/turf/open/floor/plating/ground/dirt,
-/area/canora_desert/surface/building/command)
+/turf/closed/wall/desertcavewall,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Gp" = (
 /obj/machinery/door/airlock/multi_tile/mainship/comdoor{
 	dir = 2;
@@ -7434,6 +7793,9 @@
 	},
 /turf/open/floor/mainship/red/full,
 /area/canora_desert/surface/building/command)
+"Gt" = (
+/turf/closed/wall/r_wall,
+/area/mainship/squads/general/som)
 "GB" = (
 /obj/structure/cargo_container/hd,
 /turf/open/floor/plating/icefloor/warnplate{
@@ -7520,6 +7882,14 @@
 /obj/effect/turf_decal/warning_stripes/box,
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
+"GZ" = (
+/obj/effect/turf_decal/warning_stripes/thin{
+	icon_state = "N"
+	},
+/obj/machinery/door/poddoor/four_tile_hor,
+/obj/machinery/door/firedoor/multi_tile,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_floortwomain)
 "Hb" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 9
@@ -7693,9 +8063,12 @@
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
 "Ib" = (
-/obj/structure/window/framed/mainship/hull,
-/turf/open/floor/dark2,
-/area/canora_desert/surface/building/som_mechbay_maint)
+/obj/effect/overlay/light_visible,
+/turf/open/space/transit/atmos,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Ic" = (
 /obj/structure/morgue{
 	dir = 8
@@ -7787,6 +8160,9 @@
 	name = "External Glass Airlock";
 	dir = 2
 	},
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_floortwomain)
 "Iy" = (
@@ -7826,6 +8202,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/warning_stripes/thin,
+/obj/effect/spawner/random/misc/structure/fire_closet,
 /turf/open/floor/grayscale/round/black,
 /area/canora_desert/surface/building/som_requesitions)
 "IG" = (
@@ -7932,6 +8309,9 @@
 	static_lighting = 0;
 	base_lighting_alpha = 255
 	})
+"Jg" = (
+/turf/open/floor/plating/ground/dirt/typeone,
+/area/canora_desert/surface/building/command)
 "Ji" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/cable,
@@ -7983,6 +8363,16 @@
 	},
 /turf/open/floor/mainship/mono,
 /area/canora_desert/surface/building/command)
+"JJ" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt/dug,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "JK" = (
 /obj/effect/turf_decal/warning_stripes/thin,
 /obj/machinery/door/airlock/multi_tile/mainship/secdoor/glass{
@@ -8059,6 +8449,19 @@
 /obj/structure/cable,
 /turf/open/floor/dark2,
 /area/canora_desert/surface/building/som_sservicing)
+"Kh" = (
+/obj/effect/turf_decal/lvsanddecal{
+	dir = 4
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/desertdam/cave/inner_cave_floor,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Kj" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -8100,7 +8503,7 @@
 "Ks" = (
 /obj/machinery/door/airlock/hatch/engineering{
 	name = "Robot Servicing";
-	req_access = list(207)
+	req_access = list()
 	},
 /turf/open/floor/grayscale/edge/black{
 	dir = 4
@@ -8112,6 +8515,16 @@
 	dir = 4
 	},
 /area/canora_desert/surface/building/som_mechbay)
+"Ky" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/prop/mainship/prop/news_tv/som{
+	pixel_y = 32
+	},
+/turf/open/floor/iron/kitchen,
+/area/canora_desert/surface/building/som_kitchen)
 "KA" = (
 /obj/structure/cable,
 /turf/open/floor/mainship/sterile/plain,
@@ -8152,6 +8565,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/prop/mainship/prop/news_tv/som{
+	pixel_y = 32
+	},
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/general/som)
 "KL" = (
@@ -8165,6 +8581,13 @@
 	},
 /turf/open/floor/mainship/black/full,
 /area/canora_desert/surface/building/som_armory)
+"KN" = (
+/obj/effect/turf_decal/warning_stripes/thin{
+	icon_state = "N"
+	},
+/obj/machinery/door/firedoor/multi_tile,
+/turf/open/floor/dark2,
+/area/canora_desert/surface/building/som_floortwomain)
 "KO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/light{
@@ -8549,6 +8972,10 @@
 /obj/machinery/camera/autoname/mainship/somship{
 	dir = 10
 	},
+/obj/machinery/button/door{
+	id = "som_armory";
+	req_access = list(203)
+	},
 /turf/open/floor/tile/white,
 /area/canora_desert/surface/building/som_security_hallway)
 "MT" = (
@@ -8605,6 +9032,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
 	},
+/obj/machinery/door/airlock/multi_tile/mainship/personalglass{
+	dir = 2;
+	name = "Prison";
+	req_access = list(211)
+	},
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
 /turf/open/floor/tile/black{
 	dir = 8
 	},
@@ -8641,11 +9076,33 @@
 "Nm" = (
 /turf/open/floor/mainship/sterile/white,
 /area/canora_desert/surface/building/som_restrooms)
+"Nn" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/desertdam/asphalt/cement_sunbleached,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Np" = (
 /obj/effect/turf_decal/trimline/dark/filled/warning,
 /obj/machinery/light/small,
 /turf/open/floor/prison/redfloor,
 /area/canora_desert/surface/building/som_requesitions)
+"Nr" = (
+/obj/structure/lattice,
+/obj/structure/cable,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/catwalk,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Ns" = (
 /turf/open/floor/grayscale/edge/black{
 	dir = 4
@@ -8664,6 +9121,19 @@
 	},
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/general/som)
+"NB" = (
+/obj/effect/turf_decal/lvsanddecal{
+	dir = 1
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/desertdam/asphalt/cement_sunbleached,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "NC" = (
 /obj/structure/platform/metalplatform{
 	dir = 9
@@ -8885,6 +9355,17 @@
 "Ow" = (
 /turf/open/floor/tile/damaged/four,
 /area/canora_desert/surface/building/street_food_canora)
+"Oy" = (
+/obj/effect/spawner/gibspawner/xeno,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "OA" = (
 /obj/structure/cable,
 /obj/structure/largecrate/supply/generator,
@@ -9027,6 +9508,16 @@
 "OW" = (
 /turf/closed/mineral/smooth/desertdamrockwall/indestructible,
 /area/canora_desert/surface/underground/cave)
+"OX" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt_desert,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "OY" = (
 /obj/effect/turf_decal/sandytile,
 /turf/open/floor/plating/warning{
@@ -9075,6 +9566,10 @@
 "Pi" = (
 /obj/effect/turf_decal/lvsanddecal{
 	dir = 4
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
 /turf/open/floor/plating/ground/desertdam/cave/inner_cave{
 	dir = 1
@@ -9192,6 +9687,10 @@
 /turf/closed/mineral/smooth/desertdamrockwall/indestructible,
 /area/canora_desert/surface/building/closed)
 "PL" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/dirt/typethree{
 	dir = 8
 	},
@@ -9556,8 +10055,6 @@
 	base_lighting_alpha = 255
 	})
 "Rk" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/eggcluster,
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
 	},
@@ -9669,6 +10166,13 @@
 	},
 /turf/open/floor/mainship/floor,
 /area/canora_desert/surface/building/som_engineering)
+"RI" = (
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/closed/wall/desertcavewall,
+/area/canora_desert/surface/underground/cave)
 "RJ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -9723,6 +10227,10 @@
 /area/canora_desert/surface/building/command)
 "RU" = (
 /obj/effect/decal/cleanable/blood/xeno,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
 	static_lighting = 0;
@@ -9767,6 +10275,10 @@
 /obj/effect/turf_decal/lvsanddecal/corner{
 	dir = 8;
 	alpha = 50
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
 /turf/open/floor/plating/ground/desertdam/cave/inner_cave{
 	dir = 1
@@ -9952,6 +10464,10 @@
 "SJ" = (
 /obj/machinery/mining/brace{
 	dir = 8
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/outside/desert{
@@ -10573,11 +11089,14 @@
 /turf/open/floor/mainship/floor,
 /area/canora_desert/surface/building/som_engineering)
 "Vw" = (
-/obj/structure/cable,
-/turf/open/floor/tile/black{
-	dir = 9
-	},
-/area/canora_desert/surface/building/som_prison)
+/obj/item/clothing/head/warning_cone,
+/obj/effect/turf_decal/warning_stripes/linethick,
+/obj/effect/overlay/light_visible,
+/turf/open/floor/plating/icefloor,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Vx" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -10587,9 +11106,6 @@
 	base_lighting_alpha = 255
 	})
 "Vy" = (
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "cobweb1"
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -10653,6 +11169,14 @@
 	dir = 1
 	},
 /area/canora_desert/surface/building/som_chemistry)
+"VK" = (
+/obj/structure/lattice,
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/building/crashed)
 "VL" = (
 /turf/open/floor/plating/ground/desertdam/asphalt/edge{
 	dir = 5
@@ -10662,7 +11186,6 @@
 	base_lighting_alpha = 255
 	})
 "VN" = (
-/obj/structure/spider/stickyweb,
 /obj/machinery/light,
 /turf/open/floor/plating/ground/dirt,
 /area/canora_desert/surface/building/command)
@@ -10683,9 +11206,15 @@
 	},
 /area/canora_desert/surface/underground/cave)
 "VU" = (
-/obj/prop/mainship/prop/news_tv/som,
-/turf/closed/wall/mainship/gray,
-/area/canora_desert/surface/building/command)
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/desertdam/cave/inner_cave_floor,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "VV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/job/som/squadcorpsman,
@@ -10705,10 +11234,6 @@
 /turf/open/floor/mainship/mono,
 /area/mainship/squads/general/som)
 "VZ" = (
-/obj/structure/spider/stickyweb,
-/obj/structure/spider/eggcluster,
-/obj/effect/decal/cleanable/cobweb2,
-/obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/plating/ground/dirt/typetwo,
 /area/canora_desert/surface/building/command)
 "Wa" = (
@@ -10869,6 +11394,9 @@
 /obj/structure/bed/chair/sofa/corsat,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/prop/mainship/prop/news_tv/som{
+	pixel_y = 32
 	},
 /turf/open/floor/mainship/silver{
 	dir = 1
@@ -11202,6 +11730,16 @@
 	static_lighting = 0;
 	base_lighting_alpha = 255
 	})
+"XO" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 6
+	},
+/obj/structure/platform_decoration{
+	dir = 4;
+	pixel_y = 7
+	},
+/turf/open/floor/prison/redfloor,
+/area/canora_desert/surface/building/som_floortwomain)
 "XP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/tile/green/whitegreen{
@@ -11303,6 +11841,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mainship/floor,
 /area/canora_desert/surface/building/som_engineering)
+"Yf" = (
+/obj/structure/razorwire{
+	dir = 4
+	},
+/obj/machinery/light/sun{
+	alpha = 0;
+	name = "sun"
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/canora_desert/surface/outside/desert{
+	static_lighting = 0;
+	base_lighting_alpha = 255
+	})
 "Yg" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -17785,9 +18336,9 @@ dZ
 RY
 qq
 qq
-Px
-bf
-bf
+tk
+sR
+sR
 gN
 oh
 oh
@@ -18013,11 +18564,11 @@ eG
 ow
 uW
 sb
-ow
+mS
 oJ
-ow
+mS
 Vz
-eG
+aQ
 eG
 Pw
 VL
@@ -18028,21 +18579,21 @@ eG
 eG
 eG
 eG
+aQ
+aQ
 eG
 eG
 eG
 eG
 eG
-eG
-eG
-eG
-eG
+aQ
+aQ
 iJ
 iJ
 iJ
 iJ
-uA
-eG
+uP
+aQ
 TY
 pp
 oh
@@ -18217,7 +18768,7 @@ eG
 eG
 eG
 oh
-eG
+aQ
 eG
 eG
 eG
@@ -18429,7 +18980,7 @@ Tc
 eG
 eG
 WQ
-eG
+aQ
 eG
 eG
 eG
@@ -18641,7 +19192,7 @@ VE
 yG
 eG
 Be
-eG
+aQ
 eG
 eG
 eG
@@ -18853,7 +19404,7 @@ wC
 eG
 eG
 Be
-eG
+aQ
 eG
 FX
 FX
@@ -18892,7 +19443,7 @@ eG
 eG
 eG
 TY
-pp
+OX
 pp
 rl
 FD
@@ -19104,7 +19655,7 @@ eG
 eG
 eG
 TY
-pp
+OX
 pp
 rl
 Kc
@@ -19277,7 +19828,7 @@ wC
 eG
 eG
 oh
-eG
+aQ
 eG
 kX
 vH
@@ -19701,7 +20252,7 @@ VE
 eG
 eG
 oh
-eG
+aQ
 eG
 kX
 uk
@@ -19913,7 +20464,7 @@ sE
 eG
 eG
 oh
-eG
+aQ
 eG
 eG
 eG
@@ -20549,7 +21100,7 @@ sa
 yj
 yG
 WQ
-eG
+aQ
 eG
 Cw
 al
@@ -20800,7 +21351,7 @@ II
 II
 nq
 eG
-eG
+Am
 oh
 Ri
 eG
@@ -20973,7 +21524,7 @@ fo
 eG
 eG
 oh
-Cw
+vf
 kF
 eG
 sT
@@ -21224,7 +21775,7 @@ eG
 om
 eG
 eG
-eG
+aQ
 oh
 Ri
 eG
@@ -21601,15 +22152,15 @@ io
 eG
 eG
 eG
-lv
-lv
-lv
+Kh
+Kh
+Kh
 lv
 Pi
 Sa
 eG
 oh
-bf
+sR
 eG
 eG
 eG
@@ -21860,7 +22411,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 Ri
 eG
@@ -22254,18 +22805,18 @@ eG
 eG
 Xq
 Ko
-Ko
-Ko
-Ko
-Ko
+Nn
+Nn
+Nn
+Nn
 kK
 kK
-Ko
-Ko
-Ko
-Ko
-Ko
-Ko
+Nn
+Nn
+Nn
+Nn
+Nn
+Nn
 Ko
 oj
 ii
@@ -22445,7 +22996,7 @@ oP
 mq
 NW
 Yd
-eG
+aQ
 yp
 jx
 jx
@@ -22462,24 +23013,24 @@ fR
 ZL
 eG
 eG
-eG
-eG
-Xq
+aQ
+aQ
+Cq
+ep
+ep
+EJ
+EJ
+EJ
+ep
+EJ
+ep
+EJ
+EJ
+EJ
+ep
+ep
 Ko
-Xu
-EJ
-EJ
-EJ
-Xu
-EJ
-Xu
-EJ
-EJ
-EJ
-EJ
-Xu
-Ko
-iP
+NB
 eG
 vR
 eG
@@ -22657,7 +23208,7 @@ mq
 NW
 sw
 Sk
-yp
+RI
 yp
 jx
 Bx
@@ -22673,11 +23224,11 @@ fR
 eG
 eG
 ui
-io
-eG
-Xu
-Xu
-Xu
+aX
+aQ
+ep
+ep
+ep
 Zz
 Wm
 jO
@@ -22689,11 +23240,11 @@ Pr
 xK
 hg
 FI
-Xu
-Xu
-Xu
+ep
+ep
+ep
 io
-eG
+aQ
 eG
 eG
 eX
@@ -22868,7 +23419,7 @@ Ex
 mq
 NW
 sw
-Sk
+gW
 yp
 jx
 jx
@@ -22884,9 +23435,9 @@ yp
 qz
 eG
 eG
-eG
-eG
-Xu
+aQ
+aQ
+ep
 cH
 cH
 cH
@@ -22904,8 +23455,8 @@ cH
 cH
 Ws
 fp
-Xu
-eG
+ep
+aQ
 eG
 kF
 eX
@@ -22920,7 +23471,7 @@ DW
 Au
 Ld
 el
-OB
+VK
 oh
 Ri
 nk
@@ -22981,7 +23532,7 @@ HU
 HU
 HU
 aU
-je
+mJ
 Je
 UF
 AC
@@ -22993,7 +23544,7 @@ AC
 AC
 UF
 Je
-je
+mJ
 aU
 HU
 HU
@@ -23075,12 +23626,12 @@ GD
 GD
 Ex
 Ex
-Hj
+VU
 jI
-Hj
+VU
 pA
 qq
-Px
+tk
 yV
 jx
 jx
@@ -23093,11 +23644,11 @@ VS
 jx
 yp
 yp
+aQ
 eG
 eG
-eG
-eG
-Xu
+aQ
+ep
 wR
 cH
 cH
@@ -23117,8 +23668,8 @@ BO
 pJ
 rW
 iu
-Xu
-eG
+ep
+aQ
 eX
 PY
 Ro
@@ -23286,7 +23837,7 @@ GD
 GD
 GD
 Ex
-Lk
+Gk
 Lk
 Lk
 Lk
@@ -23308,7 +23859,7 @@ wn
 eG
 eG
 eG
-Xu
+ep
 mm
 cH
 cH
@@ -23330,7 +23881,7 @@ zE
 rW
 rW
 hr
-Xu
+ep
 jd
 pG
 pG
@@ -23408,13 +23959,13 @@ aU
 je
 Je
 UF
-LK
+sI
 LK
 LK
 AC
 LK
 LK
-LK
+sI
 UF
 Je
 je
@@ -23516,16 +24067,16 @@ yp
 gy
 yp
 yp
+aQ
 eG
 eG
-eG
-eG
+aQ
 EJ
 cH
 cH
 ah
-VU
-ZQ
+Xu
+wB
 XZ
 EM
 Mq
@@ -23543,7 +24094,7 @@ xA
 rW
 Of
 EJ
-eX
+qQ
 Jn
 jM
 Cj
@@ -23621,11 +24172,11 @@ je
 Je
 aY
 UF
-LK
+tM
 LK
 AC
 LK
-LK
+tM
 UF
 aY
 Je
@@ -23728,10 +24279,10 @@ Vd
 jx
 yp
 gA
-bf
+sR
 hw
 eG
-eG
+aQ
 EJ
 cH
 cH
@@ -23755,7 +24306,7 @@ Xb
 rW
 Dk
 EJ
-eX
+qQ
 Jn
 Jn
 xh
@@ -23939,12 +24490,12 @@ Wc
 Yk
 kM
 Vd
-eG
+aQ
 kF
 eG
 eG
 bN
-Xu
+ep
 ee
 cH
 zQ
@@ -23966,7 +24517,7 @@ zE
 rW
 rW
 Pd
-Xu
+ep
 mA
 eX
 eG
@@ -24044,13 +24595,13 @@ aU
 je
 Je
 je
-je
+mJ
 je
 iO
 kQ
 iO
 je
-je
+mJ
 je
 Je
 je
@@ -24151,13 +24702,13 @@ jx
 jx
 OW
 Wc
-kF
+JJ
 vJ
 oo
 kF
 bN
-eG
-Xu
+aQ
+ep
 wR
 rm
 YF
@@ -24177,7 +24728,7 @@ zQ
 pJ
 AS
 Vl
-Xu
+ep
 eG
 mA
 eG
@@ -24369,8 +24920,8 @@ eG
 oK
 bN
 RU
-Ro
-Xu
+kp
+ep
 cH
 cH
 RV
@@ -24388,9 +24939,9 @@ zL
 zQ
 pJ
 Wx
-Xu
+ep
 sK
-eX
+qQ
 mA
 eG
 Xq
@@ -24558,7 +25109,7 @@ GD
 Ex
 GD
 GD
-Hj
+VU
 Ce
 Ce
 Ce
@@ -24574,7 +25125,7 @@ fP
 yp
 yp
 yp
-eG
+aQ
 sK
 sK
 sK
@@ -24582,9 +25133,9 @@ sK
 bN
 sK
 aw
-sK
-Xu
-Xu
+oN
+ep
+ep
 RV
 zL
 zL
@@ -24599,9 +25150,9 @@ Ed
 zL
 zQ
 Ab
-Xu
+ep
 Ro
-sK
+oN
 eG
 mA
 eG
@@ -24616,7 +25167,7 @@ eG
 eG
 eG
 eG
-eG
+Am
 oh
 GD
 qu
@@ -24770,7 +25321,7 @@ GD
 um
 Ex
 GD
-Hj
+VU
 Ce
 Sl
 nn
@@ -24784,7 +25335,7 @@ Ce
 yp
 OW
 yp
-yG
+lJ
 SJ
 hw
 sK
@@ -24795,23 +25346,23 @@ bN
 tR
 St
 sK
-kF
-Xu
+fW
+ep
 RV
 WV
-Xu
-Xu
+ep
+ep
 ti
-Xu
-Xu
-Xu
-Xu
-Xu
-Xu
+ep
+ep
+ep
+ep
+ep
+ep
 cH
 vE
-Xu
-Xu
+ep
+ep
 Ro
 Sq
 Ro
@@ -24828,7 +25379,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 Ri
 qu
@@ -25007,22 +25558,22 @@ bN
 aw
 eG
 PM
-Zt
-Xu
+Yf
+ep
 SD
 dA
-Xu
+ep
 wJ
 VZ
-Gk
+LI
 Vy
 oZ
-aQ
+LI
 FJ
-Xu
+ep
 BT
 fd
-Xu
+ep
 sK
 PM
 sK
@@ -25040,7 +25591,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 GD
 qu
@@ -25115,7 +25666,7 @@ RM
 mO
 Bv
 iO
-je
+mJ
 je
 je
 je
@@ -25209,26 +25760,26 @@ OW
 yp
 OW
 ej
-fR
+nE
 eG
 sK
 eG
-eG
-eG
+aQ
+aQ
 bN
 eG
+oN
 sK
-sK
-sK
+oN
 SX
 gZ
 du
 Eu
 Rk
 SA
-uP
-Sm
 LI
+Sm
+Cb
 LI
 ds
 SX
@@ -25311,7 +25862,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 iO
 kQ
@@ -25437,7 +25988,7 @@ gZ
 du
 Eu
 po
-PG
+Jg
 LI
 Tl
 BZ
@@ -25447,8 +25998,8 @@ SX
 bH
 tN
 Eu
-sK
-eG
+oN
+aQ
 sK
 Ro
 mA
@@ -25643,7 +26194,7 @@ zY
 vg
 aO
 sK
-aw
+Oy
 SX
 gZ
 du
@@ -25659,8 +26210,8 @@ SX
 bH
 tN
 Eu
-sK
-Ro
+oN
+kp
 PM
 eG
 mA
@@ -25676,7 +26227,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 Ri
 qu
@@ -25853,9 +26404,9 @@ Rh
 eC
 Qe
 vg
-Zt
+Yf
 fa
-sK
+oN
 SX
 gZ
 du
@@ -25871,7 +26422,7 @@ SX
 bH
 tN
 Eu
-sK
+oN
 sK
 Sq
 Ro
@@ -25888,7 +26439,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 Ri
 qu
@@ -26067,7 +26618,7 @@ UI
 vg
 RU
 Xk
-eG
+aQ
 SX
 gZ
 du
@@ -26159,7 +26710,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 iO
 kQ
@@ -26177,9 +26728,9 @@ aY
 aY
 je
 Cl
-hk
+qp
 HT
-je
+mJ
 aU
 aU
 aU
@@ -26279,7 +26830,7 @@ RJ
 RK
 aw
 PM
-kF
+JJ
 SX
 gZ
 du
@@ -26394,7 +26945,7 @@ SE
 je
 aU
 aU
-je
+mJ
 aY
 aY
 aY
@@ -26472,10 +27023,10 @@ Ce
 Ce
 Ce
 Ce
-Vw
+Lx
 hB
 Nf
-mJ
+Ce
 Ce
 EQ
 EP
@@ -26491,7 +27042,7 @@ De
 RK
 aw
 sK
-RU
+il
 vG
 Uv
 zA
@@ -26509,10 +27060,10 @@ oB
 Xu
 eG
 eG
-sK
-Ro
+oN
+kp
 mA
-eG
+aQ
 Xq
 Ko
 Ko
@@ -26700,7 +27251,7 @@ An
 wk
 vg
 ab
-Ah
+Gt
 Ah
 Ah
 Ah
@@ -26725,7 +27276,7 @@ Ah
 Ah
 Ah
 Ah
-Xq
+Cq
 Ko
 Ko
 IA
@@ -26736,7 +27287,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 Ri
 qu
@@ -26912,7 +27463,7 @@ Zd
 xB
 Yg
 wb
-Ah
+Gt
 vd
 yx
 zF
@@ -26938,7 +27489,7 @@ Qn
 Bc
 Ah
 Ah
-Ko
+Nn
 Ko
 IA
 rH
@@ -26948,7 +27499,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 oh
 GD
 qu
@@ -27007,7 +27558,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 iO
 kQ
@@ -27031,7 +27582,7 @@ Gf
 Gf
 qg
 af
-je
+mJ
 aY
 aY
 aU
@@ -27150,7 +27701,7 @@ ek
 xz
 sX
 ri
-Ko
+Nn
 Ko
 iP
 eG
@@ -27362,17 +27913,17 @@ sX
 cN
 sX
 sX
-Ko
+Nn
 Ko
 IA
 eX
-Ro
+kp
+aQ
+aQ
+aQ
 eG
 eG
-eG
-eG
-eG
-eG
+aQ
 oh
 GD
 xj
@@ -27456,9 +28007,9 @@ Gf
 qg
 af
 je
+mJ
 je
-je
-Pv
+Vw
 Gd
 hk
 hk
@@ -27536,7 +28087,7 @@ kj
 qI
 cv
 AF
-AF
+sM
 lB
 sz
 pm
@@ -27642,7 +28193,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 HU
 aU
 iO
@@ -27768,7 +28319,7 @@ uY
 bX
 PX
 EI
-xD
+cJ
 xD
 Hp
 xw
@@ -27882,7 +28433,7 @@ rw
 rC
 rC
 XD
-pe
+fU
 hk
 hk
 hk
@@ -27972,7 +28523,7 @@ vg
 vg
 vg
 vg
-Ah
+Gt
 RW
 cN
 sX
@@ -28276,7 +28827,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 mO
 uS
@@ -28290,8 +28841,8 @@ ty
 KE
 KY
 KY
-KY
-eQ
+oL
+tK
 XH
 Lp
 wA
@@ -28700,7 +29251,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 mO
 yi
@@ -28730,7 +29281,7 @@ AV
 LR
 LR
 af
-pe
+fU
 hk
 hk
 hk
@@ -28839,7 +29390,7 @@ yD
 gn
 Cg
 RS
-qp
+gn
 Cg
 yD
 Cd
@@ -28926,7 +29477,7 @@ HS
 SI
 ZW
 Fc
-Mj
+fq
 nD
 ko
 Lp
@@ -29021,7 +29572,7 @@ cb
 Fn
 qN
 Fn
-GM
+Ky
 sy
 pc
 sy
@@ -29124,7 +29675,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 mO
 mx
@@ -29155,7 +29706,7 @@ WU
 WU
 af
 pe
-hk
+qp
 hk
 hk
 hk
@@ -29439,8 +29990,8 @@ kT
 Ri
 Lk
 Lk
-Lk
-eG
+Gk
+aQ
 eG
 Fn
 qN
@@ -29548,7 +30099,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 jG
 aU
 aU
@@ -29562,8 +30113,8 @@ XH
 YX
 LB
 LB
-LB
-MT
+cG
+XO
 XH
 Lp
 KV
@@ -29764,7 +30315,7 @@ HU
 je
 je
 je
-je
+mJ
 je
 jG
 mO
@@ -30077,7 +30628,7 @@ Lk
 Lk
 Lk
 eG
-eG
+aQ
 Fn
 qN
 Fn
@@ -30214,7 +30765,7 @@ af
 af
 af
 af
-pe
+fU
 hk
 hk
 hk
@@ -30289,7 +30840,7 @@ Lk
 Lk
 Lk
 eG
-eG
+aQ
 Fn
 qN
 Fn
@@ -30395,9 +30946,9 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
-Cm
+GZ
 mx
 mx
 mx
@@ -30410,21 +30961,21 @@ mx
 mx
 mx
 mx
-mx
+lz
 mO
 aU
-je
+mJ
 aU
-aY
+cF
 aU
 yC
 aU
+pR
 aU
 aU
-aU
-aU
+pR
 je
-je
+mJ
 Pv
 yq
 As
@@ -30501,7 +31052,7 @@ Lk
 Lk
 Lk
 eG
-eG
+aQ
 Fn
 qN
 Fn
@@ -30622,7 +31173,7 @@ mx
 mx
 mx
 mx
-mx
+pX
 mO
 aU
 je
@@ -30821,7 +31372,7 @@ HU
 HU
 HU
 aU
-Cm
+KN
 mx
 mx
 mx
@@ -31040,7 +31591,7 @@ mx
 mx
 mx
 mx
-mx
+cC
 mx
 mx
 mx
@@ -31243,9 +31794,9 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
-Cm
+GZ
 mx
 mx
 mx
@@ -31563,7 +32114,7 @@ Lk
 eG
 eG
 eG
-eG
+aQ
 Fn
 qN
 Fn
@@ -31669,20 +32220,20 @@ HU
 HU
 HU
 aU
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
-mO
+KN
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+pX
 mO
 aU
 Jm
@@ -31775,7 +32326,7 @@ Lk
 eG
 eG
 eG
-eG
+aQ
 Fn
 qN
 Fn
@@ -31879,23 +32430,23 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
-aU
+Cm
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+mx
+lz
+mO
 yC
 yC
 yC
@@ -31987,7 +32538,7 @@ Lk
 eG
 eG
 eG
-eG
+aQ
 Fn
 qN
 Fn
@@ -32092,22 +32643,22 @@ HU
 HU
 HU
 HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
 aU
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
+mO
 Jm
 Jm
 Jm
@@ -32303,22 +32854,22 @@ HU
 HU
 HU
 HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
+Ib
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
+aU
 aU
 aU
 Jm
@@ -32518,20 +33069,20 @@ HU
 HU
 HU
 HU
+Ib
 HU
 HU
+Ib
+HU
+Ib
 HU
 HU
+Ib
 HU
 HU
+Ib
 HU
-HU
-HU
-HU
-HU
-HU
-HU
-HU
+Ib
 aU
 yC
 yC
@@ -32623,7 +33174,7 @@ Lk
 eG
 eG
 eG
-eG
+aQ
 kE
 wj
 of
@@ -32835,7 +33386,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 kE
 wj
 DO
@@ -32879,8 +33430,8 @@ TG
 Lz
 Sw
 NL
-eG
-eG
+aQ
+aQ
 nk
 nk
 nk
@@ -32956,7 +33507,7 @@ HU
 HU
 HU
 HU
-HU
+Ib
 aU
 Jm
 Jm
@@ -33047,7 +33598,7 @@ Lk
 eG
 eG
 eG
-eG
+aQ
 OF
 aH
 DO
@@ -33092,7 +33643,7 @@ JS
 mc
 JS
 eG
-eG
+aQ
 nk
 xj
 UU
@@ -33169,7 +33720,7 @@ HU
 HU
 HU
 HU
-aU
+pR
 aU
 aU
 aU
@@ -33283,11 +33834,11 @@ eD
 zs
 eG
 sK
-eG
-yf
-eG
-eG
-eG
+aQ
+Nr
+aQ
+aQ
+aQ
 zs
 cn
 zs
@@ -33475,9 +34026,9 @@ eG
 OF
 OF
 OF
-Ib
-Ib
-Ib
+kE
+kE
+kE
 OF
 wj
 lR
@@ -33493,7 +34044,7 @@ zm
 bU
 bU
 pE
-eG
+aQ
 sK
 eG
 yf
@@ -33684,12 +34235,12 @@ Lk
 eG
 eG
 eG
+aQ
+aQ
 eG
-eG
-eG
-eG
-eG
-eG
+aQ
+aQ
+aQ
 OF
 wj
 lR
@@ -33705,7 +34256,7 @@ ia
 bU
 bU
 pE
-eG
+aQ
 sK
 eG
 yf
@@ -33729,7 +34280,7 @@ uZ
 JS
 eG
 eG
-eG
+aQ
 qu
 qu
 xj
@@ -33901,7 +34452,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 OF
 wj
 lR
@@ -33923,7 +34474,7 @@ eG
 yf
 eG
 eG
-eG
+aQ
 zs
 QR
 zs
@@ -34113,7 +34664,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 OF
 wj
 lR
@@ -34126,16 +34677,16 @@ Oj
 lR
 WB
 zs
-sK
-sK
-sK
+oN
+oN
+oN
 sK
 sK
 sK
 yf
 sK
 sK
-sK
+oN
 zs
 YU
 nR
@@ -34153,7 +34704,7 @@ QG
 JS
 eG
 eG
-eG
+aQ
 qu
 xj
 xj
@@ -34338,7 +34889,7 @@ az
 lR
 WB
 zs
-sK
+oN
 AA
 AA
 AA
@@ -34347,7 +34898,7 @@ kn
 yf
 eG
 eG
-eG
+aQ
 zs
 rr
 zs
@@ -34365,7 +34916,7 @@ aL
 JS
 eG
 eG
-eG
+aQ
 qu
 xj
 xj
@@ -34537,7 +35088,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 OF
 Dy
 lR
@@ -34550,7 +35101,7 @@ az
 lR
 WB
 zs
-sK
+oN
 AA
 AA
 AA
@@ -34562,9 +35113,9 @@ eG
 eG
 eG
 eG
-Vx
+rG
 eG
-eG
+aQ
 BS
 JS
 JS
@@ -34578,7 +35129,7 @@ JS
 eG
 eG
 eG
-eG
+aQ
 xj
 xj
 qu
@@ -34749,7 +35300,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 OF
 wj
 lR
@@ -34762,7 +35313,7 @@ mB
 lR
 Ep
 zs
-sK
+oN
 Me
 Me
 Me
@@ -34776,7 +35327,7 @@ Me
 Me
 Vx
 eG
-eG
+aQ
 BS
 BB
 AB
@@ -34789,8 +35340,8 @@ BS
 eG
 eG
 eG
-eG
-eG
+aQ
+aQ
 xj
 xj
 qu
@@ -34961,7 +35512,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 OF
 mv
 lR
@@ -34974,7 +35525,7 @@ lR
 lR
 WB
 zs
-sK
+oN
 kn
 kn
 kn
@@ -34988,7 +35539,7 @@ kn
 kn
 Vx
 eG
-eG
+aQ
 BS
 BB
 Ae
@@ -34999,10 +35550,10 @@ Xp
 Ej
 BS
 eG
-eG
-eG
-eG
-eG
+aQ
+aQ
+aQ
+aQ
 xj
 xj
 qu
@@ -35173,7 +35724,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 tn
 WB
 WB
@@ -35210,7 +35761,7 @@ AB
 AB
 AB
 BS
-eG
+aQ
 xj
 xj
 xj
@@ -35385,7 +35936,7 @@ eG
 eG
 eG
 eG
-eG
+aQ
 kI
 tn
 kI
@@ -35422,7 +35973,7 @@ CZ
 CZ
 CZ
 BS
-eG
+aQ
 xj
 xj
 xj
@@ -35601,16 +36152,16 @@ eG
 FG
 PK
 FG
+aQ
+aQ
+aQ
+aQ
+aQ
 eG
+aQ
 eG
-eG
-eG
-eG
-eG
-eG
-eG
-ne
-sK
+FV
+oN
 kn
 kn
 kn
@@ -35624,7 +36175,7 @@ AA
 kn
 Vx
 eG
-eG
+aQ
 BS
 BS
 BS

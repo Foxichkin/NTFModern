@@ -190,6 +190,11 @@
 	light_type = /obj/item/light_bulb/tube/large
 	brightness = 12
 
+/obj/machinery/light/sun
+	brightness =  8
+	alpha = 0
+	resistance_flags = RESIST_ALL
+
 /obj/machinery/light/built/Initialize(mapload)
 	. = ..()
 	status = LIGHT_EMPTY

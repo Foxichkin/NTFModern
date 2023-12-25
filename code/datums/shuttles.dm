@@ -117,16 +117,12 @@
 	shuttle_id = SHUTTLE_SHIPELEVATOR
 	name = "Elevator"
 
-<<<<<<< Updated upstream
-=======
+
 /datum/map_template/shuttle/som_calico
 	shuttle_id = SHUTTLE_SOMTADPOLE
 	name = "Calico"
 	suffix = "_small"
 	description = "SOM issued battle dropship named Calico, small, but effective."
-
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 /datum/map_template/shuttle/cas
 	shuttle_id = SHUTTLE_CAS
 	name = "Condor Jet"
@@ -188,7 +184,7 @@
 	shuttle_id = SHUTTLE_DISTRESS_UPP
 	name = "Distress UPP"
 
-/datum/map_template/shuttle/small_ert/ufo 
+/datum/map_template/shuttle/small_ert/ufo
 	shuttle_id = SHUTTLE_DISTRESS_UFO
 	name = "Small UFO"
 
